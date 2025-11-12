@@ -1,550 +1,1294 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1.0"
-		/>
-		<meta
-			name="description"
-			content="Eco-Vest: Invest in your future and the planet with AI-powered sustainable finance."
-		/>
-		<meta
-			name="keywords"
-			content="sustainable investing, ethical finance, personal finance app, ESG investing, impact investing"
-		/>
-		<meta
-			name="author"
-			content="Eco-Vest"
-		/>
-		<title>
-			Eco-Vest - Invest in Your Future. Invest in
-			the Planet.
-		</title>
-		<link
-			rel="stylesheet"
-			href="styles.css"
-		/>
-		<link
-			rel="preconnect"
-			href="https://fonts.googleapis.com"
-		/>
-		<link
-			rel="preconnect"
-			href="https://fonts.gstatic.com"
-			crossorigin
-		/>
-		<link
-			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap"
-			rel="stylesheet"
-		/>
-	</head>
-	<body>
-		<!-- Navigation Header -->
-		<header class="header">
-			<nav class="navbar">
-				<div class="nav-container">
-					<div class="logo">
-						<span class="logo-icon">🌱</span>
-						<span class="logo-text"
-							>Eco-Vest</span
-						>
-					</div>
-					<button
-						class="menu-toggle"
-						aria-label="Toggle navigation menu"
-						aria-expanded="false"
-					>
-						<span class="line line-1"></span>
-						<span class="line line-2"></span>
-						<span class="line line-3"></span>
-					</button>
-					<ul class="nav-menu">
-						<li>
-							<a href="#features">Features</a>
-						</li>
-						<li>
-							<a href="#how-it-works"
-								>How It Works</a
-							>
-						</li>
-						<li>
-							<a href="#impact">Our Impact</a>
-						</li>
-						<li>
-							<a href="#testimonials"
-								>Testimonials</a
-							>
-						</li>
-						<li>
-							<a href="#contact">Contact</a>
-						</li>
-					</ul>
-				</div>
-			</nav>
-		</header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Eco-Vest: Invest in your future and the planet with AI-powered sustainable finance."
+    />
+    <meta
+      name="keywords"
+      content="sustainable investing, ethical finance, personal finance app, ESG investing, impact investing"
+    />
+    <meta name="author" content="Eco-Vest" />
+    <title>Eco-Vest - Invest in Your Future. Invest in the Planet.</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navigation Header -->
+    <header class="header">
+      <nav class="navbar">
+        <div class="nav-container">
+          <!-- Logo -->
+          <a href="#" class="logo">
+            <svg
+              class="logo-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 100 100"
+              width="40"
+              height="40"
+            >
+              <defs>
+                <linearGradient
+                  id="logGrad"
+                  x1="0%"
+                  y1="0%"
+                  x2="100%"
+                  y2="100%"
+                >
+                  <stop
+                    offset="0%"
+                    style="stop-color: #2d7d5e; stop-opacity: 1"
+                  />
+                  <stop
+                    offset="100%"
+                    style="stop-color: #1a5a3f; stop-opacity: 1"
+                  />
+                </linearGradient>
+              </defs>
+              <!-- Bold circular background -->
+              <circle cx="50" cy="50" r="48" fill="url(#logGrad)" />
 
-		<!-- Hero Section -->
-		<section class="hero">
-			<div class="hero-content">
-				<h1 class="hero-title">
-					Invest in Your Future.<br /><span
-						class="highlight"
-						>Invest in the Planet.</span
-					>
-				</h1>
-				<p class="hero-subtitle">
-					Grow your wealth while making positive
-					environmental and social choices.
-					AI-powered sustainable finance for the
-					conscious investor.
-				</p>
-				<div class="hero-cta">
-					<button
-						class="btn btn-primary"
-						id="scrollToCTA"
-					>
-						Start Building Impact Today
-					</button>
-					<button class="btn btn-secondary">
-						Learn More
-					</button>
-				</div>
-				<div class="hero-social-proof">
-					<div class="social-proof-item">
-						<strong>50K+</strong>
-						<span>Active Users</span>
-					</div>
-					<div class="social-proof-item">
-						<strong>$2.5M</strong>
-						<span>Invested Sustainably</span>
-					</div>
-					<div class="social-proof-item">
-						<strong>100K+</strong>
-						<span>Trees Protected</span>
-					</div>
-				</div>
-			</div>
-			<div class="hero-visual">
-				<div class="hero-illustration">
-					<div class="circle circle-1"></div>
-					<div class="circle circle-2"></div>
-					<div class="circle circle-3"></div>
-				</div>
-			</div>
-		</section>
+              <!-- Large stylized dollar sign with leaf -->
+              <g>
+                <!-- Dollar sign curves (left) -->
+                <path
+                  d="M 35 25 Q 35 35 45 35 Q 35 35 35 50 Q 35 65 45 65 Q 35 65 35 75"
+                  stroke="white"
+                  stroke-width="6"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
 
-		<!-- USP Section -->
-		<section class="usp">
-			<div class="container">
-				<h2>Why Choose Eco-Vest?</h2>
-				<p class="section-subtitle">
-					The only personal finance app that
-					seamlessly integrates AI automation with
-					sustainable investment choices.
-				</p>
-				<div class="usp-grid">
-					<div class="usp-card">
-						<div class="usp-icon">🤖</div>
-						<h3>AI-Powered Automation</h3>
-						<p>
-							Intelligent algorithms automatically
-							match your savings and investments
-							to sustainable opportunities aligned
-							with your values.
-						</p>
-					</div>
-					<div class="usp-card">
-						<div class="usp-icon">🌍</div>
-						<h3>Verified Impact</h3>
-						<p>
-							Real-time dashboard showing your
-							direct contribution to environmental
-							and social causes with transparent
-							impact reports.
-						</p>
-					</div>
-					<div class="usp-card">
-						<div class="usp-icon">📊</div>
-						<h3>Smart Growth</h3>
-						<p>
-							Achieve strong financial returns
-							while supporting companies leading
-							in sustainability and ethical
-							practices.
-						</p>
-					</div>
-					<div class="usp-card">
-						<div class="usp-icon">🔒</div>
-						<h3>Complete Transparency</h3>
-						<p>
-							Know exactly where your money goes.
-							Detailed breakdowns of every
-							investment and its environmental
-							impact metrics.
-						</p>
-					</div>
-				</div>
-			</div>
-		</section>
+                <!-- Horizontal line 1 -->
+                <line
+                  x1="28"
+                  y1="38"
+                  x2="58"
+                  y2="38"
+                  stroke="white"
+                  stroke-width="5"
+                  stroke-linecap="round"
+                />
 
-		<!-- Features Section -->
-		<section
-			class="features"
-			id="features"
-		>
-			<div class="container">
-				<h2>
-					Smart Features for Smart Investors
-				</h2>
-				<div class="features-grid">
-					<div class="feature-item">
-						<div class="feature-number">01</div>
-						<h3>Automated Savings Plans</h3>
-						<p>
-							Set it and forget it. Our AI creates
-							personalized savings schedules that
-							align with your financial goals and
-							values.
-						</p>
-					</div>
-					<div class="feature-item">
-						<div class="feature-number">02</div>
-						<h3>Sustainable Portfolio Builder</h3>
-						<p>
-							Curated portfolios of ESG-rated
-							companies. Choose from predefined
-							strategies or create your own
-							impact-focused mix.
-						</p>
-					</div>
-					<div class="feature-item">
-						<div class="feature-number">03</div>
-						<h3>Impact Dashboard</h3>
-						<p>
-							Visualize your positive
-							environmental and social impact. See
-							which causes you've supported and
-							how much change you've created.
-						</p>
-					</div>
-					<div class="feature-item">
-						<div class="feature-number">04</div>
-						<h3>Educational Resources</h3>
-						<p>
-							Learn ethical investing through our
-							blog, video tutorials, and
-							expert-led webinars on sustainable
-							finance best practices.
-						</p>
-					</div>
-					<div class="feature-item">
-						<div class="feature-number">05</div>
-						<h3>Community Challenges</h3>
-						<p>
-							Join thousands of conscious
-							investors. Complete sustainability
-							challenges and unlock rewards while
-							building together.
-						</p>
-					</div>
-					<div class="feature-item">
-						<div class="feature-number">06</div>
-						<h3>Transparent Fee Structure</h3>
-						<p>
-							No hidden costs. Simple, competitive
-							fees that support our mission
-							without compromising your returns.
-						</p>
-					</div>
-				</div>
-			</div>
-		</section>
+                <!-- Horizontal line 2 -->
+                <line
+                  x1="28"
+                  y1="62"
+                  x2="58"
+                  y2="62"
+                  stroke="white"
+                  stroke-width="5"
+                  stroke-linecap="round"
+                />
 
-		<!-- How It Works Section -->
-		<section
-			class="how-it-works"
-			id="how-it-works"
-		>
-			<div class="container">
-				<h2>How It Works</h2>
-				<p class="section-subtitle">
-					Three simple steps to align your
-					finances with your values.
-				</p>
-				<div class="steps-container">
-					<div class="step">
-						<div class="step-number">1</div>
-						<h3>Sign Up & Tell Us Your Values</h3>
-						<p>
-							Create your Eco-Vest account and
-							complete a quick values assessment.
-							Help us understand what causes
-							matter most to you.
-						</p>
-						<div class="step-visual">📝</div>
-					</div>
-					<div class="step">
-						<div class="step-number">2</div>
-						<h3>Connect & Fund Your Account</h3>
-						<p>
-							Link your bank account securely. Set
-							up automatic transfers to begin your
-							sustainable investment journey.
-						</p>
-						<div class="step-visual">💳</div>
-					</div>
-					<div class="step">
-						<div class="step-number">3</div>
-						<h3>Watch Your Impact Grow</h3>
-						<p>
-							Our AI automatically invests in
-							sustainable opportunities. Track
-							your wealth and environmental impact
-							in real-time.
-						</p>
-						<div class="step-visual">📈</div>
-					</div>
-				</div>
-			</div>
-		</section>
+                <!-- Leaf accent (right) -->
+                <path
+                  d="M 65 25 Q 75 35 75 50 Q 75 65 65 75 L 70 70 Q 78 60 78 50 Q 78 40 70 30 Z"
+                  fill="white"
+                  opacity="0.9"
+                />
 
-		<!-- Impact Section -->
-		<section
-			class="impact"
-			id="impact"
-		>
-			<div class="container">
-				<h2>Our Community's Impact</h2>
-				<p class="section-subtitle">
-					Real results from conscious investing.
-				</p>
-				<div class="impact-grid">
-					<div class="impact-card">
-						<h3>Environmental</h3>
-						<ul class="impact-list">
-							<li>🌳 100,000+ trees protected</li>
-							<li>💨 500K tons CO₂ offset</li>
-							<li>💧 10M gallons water saved</li>
-						</ul>
-					</div>
-					<div class="impact-card">
-						<h3>Social</h3>
-						<ul class="impact-list">
-							<li>
-								🤝 5,000+ communities supported
-							</li>
-							<li>👥 15,000+ jobs created</li>
-							<li>
-								📚 25,000+ students educated
-							</li>
-						</ul>
-					</div>
-					<div class="impact-card">
-						<h3>Financial</h3>
-						<ul class="impact-list">
-							<li>
-								💰 Average 8.5% annual return
-							</li>
-							<li>
-								📊 $2.5M invested sustainably
-							</li>
-							<li>
-								🎯 Zero compromise on growth
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</section>
+                <!-- Leaf vein -->
+                <line
+                  x1="65"
+                  y1="25"
+                  x2="65"
+                  y2="75"
+                  stroke="white"
+                  stroke-width="2"
+                  opacity="0.4"
+                />
+              </g>
+            </svg>
+            <span class="logo-text">Eco-Vest</span>
+          </a>
 
-		<!-- Testimonials Section -->
-		<section
-			class="testimonials"
-			id="testimonials"
-		>
-			<div class="container">
-				<h2>What Our Community Says</h2>
-				<div class="testimonials-grid">
-					<div class="testimonial-card">
-						<div class="testimonial-stars">
-							⭐⭐⭐⭐⭐
-						</div>
-						<p class="testimonial-text">
-							"Eco-Vest helped me align my
-							investments with my values. I'm
-							growing my wealth AND making a real
-							difference. It's a win-win!"
-						</p>
-						<div class="testimonial-author">
-							<strong>Sarah Chen</strong>
-							<span
-								>Environmental Advocate, 28</span
-							>
-						</div>
-					</div>
-					<div class="testimonial-card">
-						<div class="testimonial-stars">
-							⭐⭐⭐⭐⭐
-						</div>
-						<p class="testimonial-text">
-							"The transparency is incredible. I
-							can see exactly which companies I'm
-							supporting and what impact I'm
-							creating. Finally, finance with a
-							conscience."
-						</p>
-						<div class="testimonial-author">
-							<strong>Marcus Rodriguez</strong>
-							<span
-								>Sustainability Manager, 32</span
-							>
-						</div>
-					</div>
-					<div class="testimonial-card">
-						<div class="testimonial-stars">
-							⭐⭐⭐⭐⭐
-						</div>
-						<p class="testimonial-text">
-							"As a millennial, I wanted my money
-							to reflect my values. Eco-Vest's AI
-							automation saved me hours of
-							research while delivering solid
-							returns."
-						</p>
-						<div class="testimonial-author">
-							<strong>Jordan Kim</strong>
-							<span>Tech Professional, 26</span>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+          <!-- Mobile Menu Toggle -->
+          <button
+            class="menu-toggle"
+            aria-label="Toggle navigation menu"
+            aria-expanded="false"
+          >
+            <span class="line line-1"></span>
+            <span class="line line-2"></span>
+            <span class="line line-3"></span>
+          </button>
 
-		<!-- CTA Section -->
-		<section
-			class="cta-section"
-			id="contact"
-		>
-			<div class="container">
-				<div class="cta-content">
-					<h2>Ready to Invest with Impact?</h2>
-					<p>
-						Join 50,000+ conscious investors
-						building a better future—one
-						sustainable investment at a time.
-					</p>
-					<form
-						class="cta-form"
-						id="signupForm"
-					>
-						<div class="form-group">
-							<input
-								type="email"
-								placeholder="Enter your email"
-								required
-								aria-label="Email address"
-							/>
-						</div>
-						<button
-							type="submit"
-							class="btn btn-primary"
-						>
-							Start Building Impact Today
-						</button>
-					</form>
-					<p class="form-disclaimer">
-						No credit card required. Free access
-						to the app and our educational
-						resources.
-					</p>
-				</div>
-			</div>
-		</section>
+          <!-- Navigation Menu -->
+          <ul class="nav-menu">
+            <li>
+              <a href="#features">Features</a>
+            </li>
+            <li>
+              <a href="#how-it-works">How It Works</a>
+            </li>
+            <li>
+              <a href="#impact">Our Impact</a>
+            </li>
+            <li>
+              <a href="#testimonials">Testimonials</a>
+            </li>
+          </ul>
 
-		<!-- Footer -->
-		<footer class="footer">
-			<div class="container">
-				<div class="footer-content">
-					<div class="footer-section">
-						<h4>About Eco-Vest</h4>
-						<p>
-							Empowering the next generation of
-							conscious investors to grow their
-							wealth while making a positive
-							environmental and social impact.
-						</p>
-					</div>
-					<div class="footer-section">
-						<h4>Quick Links</h4>
-						<ul>
-							<li>
-								<a href="#features">Features</a>
-							</li>
-							<li>
-								<a href="#how-it-works"
-									>How It Works</a
-								>
-							</li>
-							<li>
-								<a href="#impact">Our Impact</a>
-							</li>
-							<li>
-								<a href="#testimonials"
-									>Testimonials</a
-								>
-							</li>
-						</ul>
-					</div>
-					<div class="footer-section">
-						<h4>Support</h4>
-						<ul>
-							<li>
-								<a
-									href="mailto:support@eco-vest.com"
-									>Email Support</a
-								>
-							</li>
-							<li><a href="#">Help Center</a></li>
-							<li>
-								<a href="#">Community Forum</a>
-							</li>
-							<li><a href="#">Blog</a></li>
-						</ul>
-					</div>
-					<div class="footer-section">
-						<h4>Follow Us</h4>
-						<div class="social-links">
-							<a
-								href="#"
-								aria-label="Instagram"
-								>Instagram</a
-							>
-							<a
-								href="#"
-								aria-label="Twitter"
-								>Twitter</a
-							>
-							<a
-								href="#"
-								aria-label="LinkedIn"
-								>LinkedIn</a
-							>
-						</div>
-					</div>
-				</div>
-				<div class="footer-bottom">
-					<p>
-						&copy; 2025 Eco-Vest. All rights
-						reserved. |
-						<a href="#">Privacy Policy</a> |
-						<a href="#">Terms of Service</a>
-					</p>
-				</div>
-			</div>
-		</footer>
+          <!-- CTA Button -->
+          <button class="btn btn-header-cta">Get Started</button>
+        </div>
+      </nav>
+    </header>
 
-		<script src="script.js"></script>
-	</body>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-wrapper">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span>✨</span> Join the sustainable investing revolution
+          </div>
+          <h1 class="hero-title">
+            Invest in Your Future.<br />
+            <span class="highlight">Invest in the Planet</span>
+          </h1>
+          <p class="hero-subtitle">
+            Align your investments with your values. Our AI-powered platform
+            makes sustainable investing simple, transparent, and rewarding.
+          </p>
+          <div class="hero-cta">
+            <button class="btn btn-primary btn-lg" id="scrollToCTA">
+              Start Building Impact Today
+            </button>
+            <button class="btn btn-secondary btn-lg">Watch Demo</button>
+          </div>
+        </div>
+
+        <!-- Hero Visual - Modern Abstract Design -->
+        <div class="hero-visual">
+          <div class="hero-graphic">
+            <!-- Floating cards -->
+            <div class="floating-card card-1">
+              <div class="card-icon">📈</div>
+              <div class="card-label">+8.5% Returns</div>
+            </div>
+            <div class="floating-card card-2">
+              <div class="card-icon">🌍</div>
+              <div class="card-label">100K Trees</div>
+            </div>
+            <div class="floating-card card-3">
+              <div class="card-icon">✓</div>
+              <div class="card-label">Verified Impact</div>
+            </div>
+
+            <!-- Background gradient orbs -->
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stats Bar -->
+      <div class="hero-stats">
+        <div class="stat-item">
+          <div class="stat-number">50K+</div>
+          <div class="stat-label">Active Users</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">$2.5M</div>
+          <div class="stat-label">Invested Sustainably</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">100K+</div>
+          <div class="stat-label">Trees Protected</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">50+</div>
+          <div class="stat-label">Green Companies</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- USP Section -->
+    <section class="usp">
+      <div class="container">
+        <div class="usp-header">
+          <h2>Why Choose Eco-Vest?</h2>
+          <p class="section-subtitle">
+            We've reimagined sustainable investing. Get the best of both worlds:
+            strong returns and real-world impact.
+          </p>
+        </div>
+
+        <div class="usp-grid">
+          <!-- Card 1 -->
+          <div class="usp-card">
+            <div class="usp-card-top">
+              <div class="usp-icon-wrapper">
+                <svg
+                  class="usp-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 64 64"
+                >
+                  <circle
+                    cx="32"
+                    cy="32"
+                    r="30"
+                    fill="rgba(45, 125, 94, 0.1)"
+                  />
+                  <g transform="translate(32, 32)">
+                    <path
+                      d="M -8 4 L 0 -8 L 8 4 M 0 -8 L 0 10"
+                      stroke="#2d7d5e"
+                      stroke-width="2.5"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <circle cx="0" cy="-8" r="3" fill="#2d7d5e" />
+                    <circle cx="0" cy="10" r="3" fill="#2d7d5e" />
+                  </g>
+                </svg>
+              </div>
+              <h3>AI-Powered Automation</h3>
+            </div>
+            <p>
+              Intelligent algorithms automatically match your savings and
+              investments to sustainable opportunities aligned with your values.
+            </p>
+            <a href="#" class="usp-link">Learn more →</a>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="usp-card">
+            <div class="usp-card-top">
+              <div class="usp-icon-wrapper">
+                <svg
+                  class="usp-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 64 64"
+                >
+                  <circle
+                    cx="32"
+                    cy="32"
+                    r="30"
+                    fill="rgba(45, 125, 94, 0.1)"
+                  />
+                  <g transform="translate(32, 32)">
+                    <circle
+                      cx="-6"
+                      cy="-6"
+                      r="4"
+                      fill="none"
+                      stroke="#2d7d5e"
+                      stroke-width="2"
+                    />
+                    <circle
+                      cx="6"
+                      cy="-6"
+                      r="4"
+                      fill="none"
+                      stroke="#2d7d5e"
+                      stroke-width="2"
+                    />
+                    <circle cx="-6" cy="6" r="4" fill="#2d7d5e" />
+                    <circle
+                      cx="6"
+                      cy="6"
+                      r="4"
+                      fill="none"
+                      stroke="#2d7d5e"
+                      stroke-width="2"
+                    />
+                    <path
+                      d="M -6 -2 L 6 -2 M -10 0 L 10 0 M -6 2 L 6 2"
+                      stroke="#2d7d5e"
+                      stroke-width="1.5"
+                      opacity="0.3"
+                    />
+                  </g>
+                </svg>
+              </div>
+              <h3>Verified Impact</h3>
+            </div>
+            <p>
+              Real-time dashboard showing your direct contribution to
+              environmental and social causes with transparent impact reports.
+            </p>
+            <a href="#" class="usp-link">Learn more →</a>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="usp-card">
+            <div class="usp-card-top">
+              <div class="usp-icon-wrapper">
+                <svg
+                  class="usp-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 64 64"
+                >
+                  <circle
+                    cx="32"
+                    cy="32"
+                    r="30"
+                    fill="rgba(45, 125, 94, 0.1)"
+                  />
+                  <g transform="translate(32, 32)">
+                    <path
+                      d="M -8 8 L -8 -4 L 0 -10 L 8 -4 L 8 8"
+                      stroke="#2d7d5e"
+                      stroke-width="2"
+                      fill="none"
+                      stroke-linejoin="round"
+                    />
+                    <rect
+                      x="-4"
+                      y="0"
+                      width="8"
+                      height="8"
+                      fill="#2d7d5e"
+                      opacity="0.3"
+                    />
+                    <circle cx="0" cy="0" r="2" fill="#2d7d5e" />
+                  </g>
+                </svg>
+              </div>
+              <h3>Smart Growth</h3>
+            </div>
+            <p>
+              Achieve strong financial returns while supporting companies
+              leading in sustainability and ethical practices.
+            </p>
+            <a href="#" class="usp-link">Learn more →</a>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="usp-card">
+            <div class="usp-card-top">
+              <div class="usp-icon-wrapper">
+                <svg
+                  class="usp-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 64 64"
+                >
+                  <circle
+                    cx="32"
+                    cy="32"
+                    r="30"
+                    fill="rgba(45, 125, 94, 0.1)"
+                  />
+                  <g transform="translate(32, 32)">
+                    <rect
+                      x="-8"
+                      y="-8"
+                      width="16"
+                      height="16"
+                      rx="2"
+                      fill="none"
+                      stroke="#2d7d5e"
+                      stroke-width="2"
+                    />
+                    <path
+                      d="M -4 -8 L -4 8 M 4 -8 L 4 8"
+                      stroke="#2d7d5e"
+                      stroke-width="1.5"
+                      opacity="0.3"
+                    />
+                    <circle
+                      cx="-4"
+                      cy="0"
+                      r="2.5"
+                      fill="#2d7d5e"
+                      opacity="0.6"
+                    />
+                    <circle cx="4" cy="0" r="2.5" fill="#2d7d5e" />
+                  </g>
+                </svg>
+              </div>
+              <h3>Complete Transparency</h3>
+            </div>
+            <p>
+              Know exactly where your money goes. Detailed breakdowns of every
+              investment and its environmental impact metrics.
+            </p>
+            <a href="#" class="usp-link">Learn more →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+      <div class="container">
+        <div class="features-header">
+          <h2>Smart Features for Smart Investors</h2>
+          <p class="section-subtitle">
+            Everything you need to invest with confidence and impact.
+          </p>
+        </div>
+
+        <div class="features-grid">
+          <!-- Feature 1 -->
+          <div class="feature-item">
+            <div class="feature-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                <circle cx="32" cy="32" r="30" fill="rgba(45, 125, 94, 0.1)" />
+                <g transform="translate(32, 32)">
+                  <circle cx="0" cy="0" r="3" fill="#2d7d5e" />
+                  <circle cx="-8" cy="-4" r="3" fill="#2d7d5e" opacity="0.6" />
+                  <circle cx="8" cy="6" r="3" fill="#2d7d5e" opacity="0.6" />
+                  <path
+                    d="M 0 0 L -8 -4 M 0 0 L 8 6"
+                    stroke="#2d7d5e"
+                    stroke-width="1.5"
+                    opacity="0.3"
+                  />
+                </g>
+              </svg>
+            </div>
+            <h3>Automated Savings Plans</h3>
+            <p>
+              Set it and forget it. Our AI creates personalized savings
+              schedules that align with your financial goals and values.
+            </p>
+            <div class="feature-meta">
+              <span class="feature-badge">AI-Powered</span>
+            </div>
+          </div>
+
+          <!-- Feature 2 -->
+          <div class="feature-item">
+            <div class="feature-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                <circle cx="32" cy="32" r="30" fill="rgba(45, 125, 94, 0.1)" />
+                <g transform="translate(32, 32)">
+                  <rect
+                    x="-8"
+                    y="-6"
+                    width="5"
+                    height="12"
+                    fill="#2d7d5e"
+                    opacity="0.6"
+                  />
+                  <rect x="-1" y="-8" width="5" height="14" fill="#2d7d5e" />
+                  <rect
+                    x="6"
+                    y="-4"
+                    width="5"
+                    height="10"
+                    fill="#2d7d5e"
+                    opacity="0.6"
+                  />
+                  <line
+                    x1="-10"
+                    y1="8"
+                    x2="12"
+                    y2="8"
+                    stroke="#2d7d5e"
+                    stroke-width="1.5"
+                  />
+                </g>
+              </svg>
+            </div>
+            <h3>Sustainable Portfolio Builder</h3>
+            <p>
+              Curated portfolios of ESG-rated companies. Choose from predefined
+              strategies or create your own impact-focused mix.
+            </p>
+            <div class="feature-meta">
+              <span class="feature-badge">Customizable</span>
+            </div>
+          </div>
+
+          <!-- Feature 3 -->
+          <div class="feature-item">
+            <div class="feature-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                <circle cx="32" cy="32" r="30" fill="rgba(45, 125, 94, 0.1)" />
+                <g transform="translate(32, 32)">
+                  <circle
+                    cx="0"
+                    cy="0"
+                    r="8"
+                    fill="none"
+                    stroke="#2d7d5e"
+                    stroke-width="1.5"
+                  />
+                  <path
+                    d="M -4 -4 L 4 4 M 4 -4 L -4 4"
+                    stroke="#2d7d5e"
+                    stroke-width="1.5"
+                    opacity="0.4"
+                  />
+                  <circle cx="-6" cy="-6" r="2" fill="#2d7d5e" />
+                  <circle cx="6" cy="6" r="2" fill="#2d7d5e" opacity="0.6" />
+                </g>
+              </svg>
+            </div>
+            <h3>Impact Dashboard</h3>
+            <p>
+              Visualize your positive environmental and social impact. See which
+              causes you've supported and how much change you've created.
+            </p>
+            <div class="feature-meta">
+              <span class="feature-badge">Real-time</span>
+            </div>
+          </div>
+
+          <!-- Feature 4 -->
+          <div class="feature-item">
+            <div class="feature-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                <circle cx="32" cy="32" r="30" fill="rgba(45, 125, 94, 0.1)" />
+                <g transform="translate(32, 32)">
+                  <path
+                    d="M -8 -6 L -8 8 L 8 8 L 8 -6"
+                    stroke="#2d7d5e"
+                    stroke-width="2"
+                    fill="none"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M -4 -6 L -4 2 M 0 -6 L 0 2 M 4 -6 L 4 2"
+                    stroke="#2d7d5e"
+                    stroke-width="1.5"
+                    opacity="0.4"
+                  />
+                  <circle cx="0" cy="8" r="1.5" fill="#2d7d5e" />
+                </g>
+              </svg>
+            </div>
+            <h3>Educational Resources</h3>
+            <p>
+              Learn ethical investing through our blog, video tutorials, and
+              expert-led webinars on sustainable finance best practices.
+            </p>
+            <div class="feature-meta">
+              <span class="feature-badge">Learning Hub</span>
+            </div>
+          </div>
+
+          <!-- Feature 5 -->
+          <div class="feature-item">
+            <div class="feature-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                <circle cx="32" cy="32" r="30" fill="rgba(45, 125, 94, 0.1)" />
+                <g transform="translate(32, 32)">
+                  <circle
+                    cx="-6"
+                    cy="-4"
+                    r="3.5"
+                    fill="none"
+                    stroke="#2d7d5e"
+                    stroke-width="1.5"
+                  />
+                  <circle cx="0" cy="0" r="3.5" fill="#2d7d5e" opacity="0.7" />
+                  <circle
+                    cx="6"
+                    cy="-4"
+                    r="3.5"
+                    fill="none"
+                    stroke="#2d7d5e"
+                    stroke-width="1.5"
+                  />
+                  <path
+                    d="M -5 -1 L 1 3 M 0 3 L 6 -1"
+                    stroke="#2d7d5e"
+                    stroke-width="1.5"
+                    opacity="0.4"
+                  />
+                </g>
+              </svg>
+            </div>
+            <h3>Community Challenges</h3>
+            <p>
+              Join thousands of conscious investors. Complete sustainability
+              challenges and unlock rewards while building together.
+            </p>
+            <div class="feature-meta">
+              <span class="feature-badge">Social</span>
+            </div>
+          </div>
+
+          <!-- Feature 6 -->
+          <div class="feature-item">
+            <div class="feature-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                <circle cx="32" cy="32" r="30" fill="rgba(45, 125, 94, 0.1)" />
+                <g transform="translate(32, 32)">
+                  <circle
+                    cx="0"
+                    cy="0"
+                    r="8"
+                    fill="none"
+                    stroke="#2d7d5e"
+                    stroke-width="2"
+                  />
+                  <path
+                    d="M 0 -8 L 0 8 M -8 0 L 8 0"
+                    stroke="#2d7d5e"
+                    stroke-width="1.5"
+                    opacity="0.4"
+                  />
+                  <circle cx="0" cy="0" r="2" fill="#2d7d5e" />
+                </g>
+              </svg>
+            </div>
+            <h3>Transparent Fee Structure</h3>
+            <p>
+              No hidden costs. Simple, competitive fees that support our mission
+              without compromising your returns.
+            </p>
+            <div class="feature-meta">
+              <span class="feature-badge">Zero Hidden Fees</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works" id="how-it-works">
+      <div class="container">
+        <div class="how-it-works-header">
+          <h2>How It Works</h2>
+          <p class="section-subtitle">
+            Get started in just three simple steps. From sign-up to impact in
+            minutes.
+          </p>
+        </div>
+
+        <div class="steps-container">
+          <!-- Step 1 -->
+          <div class="step">
+            <div class="step-indicator">
+              <div class="step-number">1</div>
+              <div class="step-line"></div>
+            </div>
+            <div class="step-content">
+              <div class="step-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                  <circle
+                    cx="32"
+                    cy="32"
+                    r="30"
+                    fill="rgba(45, 125, 94, 0.1)"
+                  />
+                  <g transform="translate(32, 32)">
+                    <rect
+                      x="-8"
+                      y="-10"
+                      width="16"
+                      height="20"
+                      rx="2"
+                      fill="none"
+                      stroke="#2d7d5e"
+                      stroke-width="2"
+                    />
+                    <circle cx="0" cy="0" r="3" fill="#2d7d5e" />
+                    <path
+                      d="M -6 -6 L 6 -6 M -6 8 L 6 8"
+                      stroke="#2d7d5e"
+                      stroke-width="1.5"
+                      opacity="0.4"
+                    />
+                  </g>
+                </svg>
+              </div>
+              <h3>Sign Up & Tell Us Your Values</h3>
+              <p>
+                Create your Eco-Vest account and complete a quick values
+                assessment. Help us understand what causes matter most to you.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="step">
+            <div class="step-indicator">
+              <div class="step-number">2</div>
+              <div class="step-line"></div>
+            </div>
+            <div class="step-content">
+              <div class="step-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                  <circle
+                    cx="32"
+                    cy="32"
+                    r="30"
+                    fill="rgba(45, 125, 94, 0.1)"
+                  />
+                  <g transform="translate(32, 32)">
+                    <rect
+                      x="-8"
+                      y="-6"
+                      width="16"
+                      height="12"
+                      rx="1"
+                      fill="none"
+                      stroke="#2d7d5e"
+                      stroke-width="2"
+                    />
+                    <path
+                      d="M -4 -6 L -4 0 M 0 -6 L 0 6 M 4 -6 L 4 0"
+                      stroke="#2d7d5e"
+                      stroke-width="1.5"
+                      opacity="0.4"
+                    />
+                    <circle cx="0" cy="0" r="2" fill="#2d7d5e" />
+                  </g>
+                </svg>
+              </div>
+              <h3>Connect & Fund Your Account</h3>
+              <p>
+                Link your bank account securely. Set up automatic transfers to
+                begin your sustainable investment journey.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="step">
+            <div class="step-indicator">
+              <div class="step-number">3</div>
+              <div class="step-line"></div>
+            </div>
+            <div class="step-content">
+              <div class="step-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                  <circle
+                    cx="32"
+                    cy="32"
+                    r="30"
+                    fill="rgba(45, 125, 94, 0.1)"
+                  />
+                  <g transform="translate(32, 32)">
+                    <polyline
+                      points="-6,6 0,-6 6,4"
+                      fill="none"
+                      stroke="#2d7d5e"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <circle cx="-6" cy="6" r="2" fill="#2d7d5e" opacity="0.6" />
+                    <circle cx="0" cy="-6" r="2" fill="#2d7d5e" />
+                    <circle cx="6" cy="4" r="2" fill="#2d7d5e" opacity="0.6" />
+                  </g>
+                </svg>
+              </div>
+              <h3>Watch Your Impact Grow</h3>
+              <p>
+                Our AI automatically invests in sustainable opportunities. Track
+                your wealth and environmental impact in real-time.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Impact Section -->
+    <section class="impact" id="impact">
+      <div class="container">
+        <div class="impact-header">
+          <h2>Our Community's Impact</h2>
+          <p class="section-subtitle">
+            Real, measurable results from conscious investing. Together, we're
+            making a difference.
+          </p>
+        </div>
+
+        <div class="impact-grid">
+          <!-- Environmental Impact -->
+          <div class="impact-card">
+            <div class="impact-card-header">
+              <div class="impact-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                  <g transform="translate(32, 32)">
+                    <!-- Leaf icon -->
+                    <path
+                      d="M 0 -10 Q 8 -6 8 2 Q 8 10 0 12 Q -8 10 -8 2 Q -8 -6 0 -10 Z M -2 -2 L 2 8"
+                      stroke="white"
+                      stroke-width="1.5"
+                      fill="white"
+                      stroke-linecap="round"
+                    />
+                  </g>
+                </svg>
+              </div>
+              <h3>Environmental</h3>
+            </div>
+            <ul class="impact-list">
+              <li>
+                <span class="impact-stat">100K+</span>
+                <span class="impact-label">Trees Protected</span>
+              </li>
+              <li>
+                <span class="impact-stat">500K</span>
+                <span class="impact-label">Tons CO₂ Offset</span>
+              </li>
+              <li>
+                <span class="impact-stat">10M+</span>
+                <span class="impact-label">Gallons Water Saved</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Social Impact -->
+          <div class="impact-card">
+            <div class="impact-card-header">
+              <div class="impact-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                  <g transform="translate(32, 32)">
+                    <!-- People/Community icon -->
+                    <circle cx="-5" cy="-6" r="3.5" fill="white" />
+                    <circle cx="5" cy="-6" r="3.5" fill="white" />
+                    <path
+                      d="M -8 -2 L -2 -2 L -2 4 L -8 4 Z"
+                      fill="white"
+                      opacity="0.8"
+                    />
+                    <path
+                      d="M 2 -2 L 8 -2 L 8 4 L 2 4 Z"
+                      fill="white"
+                      opacity="0.8"
+                    />
+                    <path d="M -2 2 L 2 2 L 2 8 L -2 8 Z" fill="white" />
+                  </g>
+                </svg>
+              </div>
+              <h3>Social</h3>
+            </div>
+            <ul class="impact-list">
+              <li>
+                <span class="impact-stat">5K+</span>
+                <span class="impact-label">Communities Supported</span>
+              </li>
+              <li>
+                <span class="impact-stat">15K+</span>
+                <span class="impact-label">Jobs Created</span>
+              </li>
+              <li>
+                <span class="impact-stat">25K+</span>
+                <span class="impact-label">Students Educated</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Financial Impact -->
+          <div class="impact-card">
+            <div class="impact-card-header">
+              <div class="impact-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                  <g transform="translate(32, 32)">
+                    <!-- Growth/Upward trend icon -->
+                    <path
+                      d="M -8 6 L -4 2 L 0 4 L 4 -2 L 8 0"
+                      stroke="white"
+                      stroke-width="2"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M 4 -2 L 6 -2 L 6 0"
+                      stroke="white"
+                      stroke-width="2"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </g>
+                </svg>
+              </div>
+              <h3>Financial</h3>
+            </div>
+            <ul class="impact-list">
+              <li>
+                <span class="impact-stat">8.5%</span>
+                <span class="impact-label">Average Annual Return</span>
+              </li>
+              <li>
+                <span class="impact-stat">$2.5M</span>
+                <span class="impact-label">Invested Sustainably</span>
+              </li>
+              <li>
+                <span class="impact-stat">0%</span>
+                <span class="impact-label">Compromise on Growth</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+      <div class="container">
+        <div class="testimonials-header">
+          <h2>What Our Community Says</h2>
+          <p class="section-subtitle">
+            Real experiences from conscious investors making a difference.
+          </p>
+        </div>
+
+        <div class="testimonials-grid">
+          <!-- Testimonial 1 -->
+          <div class="testimonial-card">
+            <div class="testimonial-rating">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="#7ac8a0"
+              >
+                <polygon
+                  points="12 2 15.09 10.26 24 10.26 17.55 15.74 19.64 24 12 19.52 4.36 24 6.45 15.74 0 10.26 8.91 10.26"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="#7ac8a0"
+              >
+                <polygon
+                  points="12 2 15.09 10.26 24 10.26 17.55 15.74 19.64 24 12 19.52 4.36 24 6.45 15.74 0 10.26 8.91 10.26"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="#7ac8a0"
+              >
+                <polygon
+                  points="12 2 15.09 10.26 24 10.26 17.55 15.74 19.64 24 12 19.52 4.36 24 6.45 15.74 0 10.26 8.91 10.26"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="#7ac8a0"
+              >
+                <polygon
+                  points="12 2 15.09 10.26 24 10.26 17.55 15.74 19.64 24 12 19.52 4.36 24 6.45 15.74 0 10.26 8.91 10.26"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="#7ac8a0"
+              >
+                <polygon
+                  points="12 2 15.09 10.26 24 10.26 17.55 15.74 19.64 24 12 19.52 4.36 24 6.45 15.74 0 10.26 8.91 10.26"
+                />
+              </svg>
+            </div>
+            <p class="testimonial-text">
+              "Eco-Vest helped me align my investments with my values. I'm
+              growing my wealth AND making a real difference. It's a win-win!"
+            </p>
+            <div class="testimonial-author">
+              <strong>Sarah Chen</strong>
+              <span>Environmental Advocate, 28</span>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="testimonial-card">
+            <div class="testimonial-rating">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="#7ac8a0"
+              >
+                <polygon
+                  points="12 2 15.09 10.26 24 10.26 17.55 15.74 19.64 24 12 19.52 4.36 24 6.45 15.74 0 10.26 8.91 10.26"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="#7ac8a0"
+              >
+                <polygon
+                  points="12 2 15.09 10.26 24 10.26 17.55 15.74 19.64 24 12 19.52 4.36 24 6.45 15.74 0 10.26 8.91 10.26"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="#7ac8a0"
+              >
+                <polygon
+                  points="12 2 15.09 10.26 24 10.26 17.55 15.74 19.64 24 12 19.52 4.36 24 6.45 15.74 0 10.26 8.91 10.26"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="#7ac8a0"
+              >
+                <polygon
+                  points="12 2 15.09 10.26 24 10.26 17.55 15.74 19.64 24 12 19.52 4.36 24 6.45 15.74 0 10.26 8.91 10.26"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="#7ac8a0"
+              >
+                <polygon
+                  points="12 2 15.09 10.26 24 10.26 17.55 15.74 19.64 24 12 19.52 4.36 24 6.45 15.74 0 10.26 8.91 10.26"
+                />
+              </svg>
+            </div>
+            <p class="testimonial-text">
+              "The transparency is incredible. I can see exactly which companies
+              I'm supporting and what impact I'm creating. Finally, finance with
+              a conscience."
+            </p>
+            <div class="testimonial-author">
+              <strong>Marcus Rodriguez</strong>
+              <span>Sustainability Manager, 32</span>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="testimonial-card">
+            <div class="testimonial-rating">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="#7ac8a0"
+              >
+                <polygon
+                  points="12 2 15.09 10.26 24 10.26 17.55 15.74 19.64 24 12 19.52 4.36 24 6.45 15.74 0 10.26 8.91 10.26"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="#7ac8a0"
+              >
+                <polygon
+                  points="12 2 15.09 10.26 24 10.26 17.55 15.74 19.64 24 12 19.52 4.36 24 6.45 15.74 0 10.26 8.91 10.26"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="#7ac8a0"
+              >
+                <polygon
+                  points="12 2 15.09 10.26 24 10.26 17.55 15.74 19.64 24 12 19.52 4.36 24 6.45 15.74 0 10.26 8.91 10.26"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="#7ac8a0"
+              >
+                <polygon
+                  points="12 2 15.09 10.26 24 10.26 17.55 15.74 19.64 24 12 19.52 4.36 24 6.45 15.74 0 10.26 8.91 10.26"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="#7ac8a0"
+              >
+                <polygon
+                  points="12 2 15.09 10.26 24 10.26 17.55 15.74 19.64 24 12 19.52 4.36 24 6.45 15.74 0 10.26 8.91 10.26"
+                />
+              </svg>
+            </div>
+            <p class="testimonial-text">
+              "As a millennial, I wanted my money to reflect my values.
+              Eco-Vest's AI automation saved me hours of research while
+              delivering solid returns."
+            </p>
+            <div class="testimonial-author">
+              <strong>Jordan Kim</strong>
+              <span>Tech Professional, 26</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section" id="contact">
+      <div class="container">
+        <div class="cta-wrapper">
+          <div class="cta-content">
+            <h2>Ready to Invest with Impact?</h2>
+            <p class="cta-subtitle">
+              Join 50,000+ conscious investors building a better future—one
+              sustainable investment at a time.
+            </p>
+
+            <form class="cta-form" id="signupForm">
+              <input
+                type="email"
+                placeholder="Enter your email"
+                required
+                aria-label="Email address"
+                class="cta-input"
+              />
+              <button type="submit" class="btn btn-cta">
+                Start Building Impact
+              </button>
+            </form>
+
+            <p class="cta-disclaimer">
+              No credit card required. Free access to the app and our
+              educational resources.
+            </p>
+          </div>
+
+          <!-- Decorative features -->
+          <div class="cta-features">
+            <div class="cta-feature">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path
+                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+                  fill="white"
+                />
+              </svg>
+              <span>AI-Powered Matching</span>
+            </div>
+            <div class="cta-feature">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path
+                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+                  fill="white"
+                />
+              </svg>
+              <span>Real-Time Impact Tracking</span>
+            </div>
+            <div class="cta-feature">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path
+                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+                  fill="white"
+                />
+              </svg>
+              <span>Expert Support</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <!-- Footer Top -->
+        <div class="footer-top">
+          <div class="footer-section footer-brand">
+            <h3 class="footer-logo">Eco-Vest</h3>
+            <p>
+              Empowering the next generation of conscious investors to grow
+              their wealth while making a positive environmental and social
+              impact.
+            </p>
+            <div class="footer-socials">
+              <a href="#" aria-label="Instagram" title="Instagram">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4c0 3.2-2.6 5.8-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8C2 4.6 4.6 2 7.8 2m-.3 2C5.4 4 4 5.4 4 7.5v9c0 2.1 1.4 3.5 3.5 3.5h9c2.1 0 3.5-1.4 3.5-3.5v-9c0-2.1-1.4-3.5-3.5-3.5h-9m11.1 1.5a1.5 1.5 0 0 1 1.5 1.5 1.5 1.5 0 0 1-1.5 1.5 1.5 1.5 0 0 1-1.5-1.5 1.5 1.5 0 0 1 1.5-1.5m-5.8 1.5a3.5 3.5 0 0 1 3.5 3.5 3.5 3.5 0 0 1-3.5 3.5 3.5 3.5 0 0 1-3.5-3.5 3.5 3.5 0 0 1 3.5-3.5m0 2a1.5 1.5 0 0 0-1.5 1.5 1.5 1.5 0 0 0 1.5 1.5 1.5 1.5 0 0 0 1.5-1.5 1.5 1.5 0 0 0-1.5-1.5z"
+                  />
+                </svg>
+              </a>
+              <a href="#" aria-label="Twitter" title="Twitter">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2s9 5 20 5a9.5 9.5 0 00-9-5.5c4.75 2.25 9-1 9-1z"
+                  />
+                </svg>
+              </a>
+              <a href="#" aria-label="LinkedIn" title="LinkedIn">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.39v-1.2h-2.5v8.5h2.5v-4.34c0-.77.62-1.4 1.4-1.4.77 0 1.4.63 1.4 1.4v4.34h2.5M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69-.93 0-1.69.76-1.69 1.69 0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.5H5.5v8.5h2.77z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#features">Features</a></li>
+              <li><a href="#how-it-works">How It Works</a></li>
+              <li><a href="#impact">Our Impact</a></li>
+              <li><a href="#testimonials">Testimonials</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h4>Support</h4>
+            <ul>
+              <li><a href="mailto:support@eco-vest.com">Email Support</a></li>
+              <li><a href="#">Help Center</a></li>
+              <li><a href="#">Community Forum</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h4>Legal</h4>
+            <ul>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Service</a></li>
+              <li><a href="#">Cookie Policy</a></li>
+              <li><a href="#">Disclosures</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Footer Divider -->
+        <div class="footer-divider"></div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+          <p>
+            &copy; 2025 Eco-Vest. All rights reserved. | Made with
+            <svg
+              width="14"
+              height="14"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              style="display: inline; margin: 0 0.25rem; color: #7ac8a0"
+            >
+              <path
+                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+              />
+            </svg>
+            by Eco-Vest
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>
