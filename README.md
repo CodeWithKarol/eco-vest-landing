@@ -54,26 +54,32 @@ eco-vest-landing/
 - **Optimized header** sizing:
   - Desktop: Full size for prominent branding
   - Scrolled state: Compact size for improved screen real estate
-  - Mobile: Tight spacing with touch-friendly 44px× 44px hamburger button
+  - Mobile: Tight spacing with touch-friendly 44px × 44px hamburger button
   - Tablet: Intermediate sizing for optimal proportions
-- Logo with brand identity and smooth hover effects
+- **Logo with elegant hover effects**:
+  - Smooth color transition to accent green
+  - Animated gradient underline
+  - Subtle icon tilt and lift animation
+  - Refined cubic-bezier easing for sophisticated feel
 
 ### 2. **Hero Section**
 
-- **Full viewport height** (100vh) coverage on desktop
+- **Full viewport height** (100vh) coverage on desktop with responsive padding
 - **Compelling headline**: "Invest in Your Future. Invest in the Planet."
 - **Fluid typography** with responsive scaling using `clamp()`:
-  - Title: Scales from 2rem to 4rem based on viewport width
+  - Title: Scales from 1.75rem to 3.5rem based on viewport width
   - Subtitle: Proportional scaling for optimal readability
-- **Dual-column layout** on desktop, single column on mobile
+- **Dual-column layout** on desktop, single column on mobile with centered content
 - **Animated illustration** with floating circles and visual elements
-- **Primary CTA**: "Start Building Impact Today"
+- **Primary CTA**: "Start Building Impact Today" with secondary "Watch Demo" button
 - **Social proof statistics** with key metrics:
-  - Active users
-  - Total investments
-  - Environmental impact
-- **Responsive CTAs** that stack vertically on mobile
+  - 50K+ Active Users
+  - $2.5M Invested Sustainably
+  - 100K+ Trees Protected
+  - 50+ Companies in Portfolio
+- **Responsive CTAs** that stack vertically on mobile/tablet
 - **Hero visual** fills available space on desktop, hidden on mobile
+- **Smooth animations** on page load with staggered effects
 
 ### 3. **USP Section**
 
@@ -87,24 +93,55 @@ eco-vest-landing/
 
 ### 5. **How It Works**
 
-- Three-step process: Sign Up → Connect & Fund → Watch Impact Grow
+- Three-step process with clean, modern design
+- **Steps**: Sign Up → Connect & Fund → Watch Impact Grow
+- **Custom SVG icons** for each step (form, payment, growth)
+- **Gradient-styled step indicators** with numbered circles
+- **Responsive layout** with single-column on mobile, horizontal flow on desktop
+- **Smooth animations** with staggered delays on page load
+- **No connecting lines** for minimal, clean aesthetic
 
 ### 6. **Impact Section**
 
-- Environmental, Social, and Financial metrics
-- Real community achievements
+- **Three-card grid** displaying environmental, social, and financial impact
+- **Custom SVG icons**:
+  - Leaf icon for environmental impact
+  - People/community icon for social impact
+  - Growth trend icon for financial metrics
+- **Large impact statistics** with descriptive labels
+- **Gradient background** with frosted glass card design
+- **Smooth animations** with staggered entrance effects
+- **Responsive layout** adapting to tablet and mobile views
 
 ### 7. **Testimonials**
 
-- Three user testimonials with 5-star ratings
+- **Three testimonial cards** with customer quotes
+- **Custom 5-star SVG icons** in accent green
+- **Modern card styling** with gradient top border
+- **Responsive grid layout** (3-column desktop, 1-column mobile)
+- **Smooth animations** with staggered entrance on page load
+- **Professional typography** highlighting user feedback
 
-### 8. **Call-to-Action (CTA)**
+### 8. **Call-to-Action (CTA) Section**
 
-- Email signup form with validation
+- **Two-column layout** (content left, features right) on desktop
+- **Dark gradient background** with subtle decorative elements
+- **Email signup form** with frosted glass input styling
+- **Gradient button** with smooth hover transitions
+- **Three feature cards** with checkmark SVG icons highlighting key benefits
+- **Interactive hover effects** with card lift and icon scaling
+- **Responsive single-column** layout on mobile/tablet
 
 ### 9. **Footer**
 
-- Company information, quick links, support channels
+- **Four-column grid layout** (Brand, Quick Links, Support, Legal)
+- **Brand section** with logo, company description, and social icons
+- **Social icon links** (Instagram, Twitter, LinkedIn) with custom SVG icons
+- **Interactive hover effects** on links and social icons (lift, color change, glow)
+- **Underline animation** on footer links with gradient sweep
+- **Dark gradient background** for visual distinction
+- **Responsive layout** (4-column desktop → 2-column tablet → 1-column mobile)
+- **Copyright notice** with heart SVG icon
 
 ## ⚙️ Features
 
@@ -166,13 +203,18 @@ php -S localhost:8000
 
 ## 🎯 Key Features
 
-- ✅ **100% responsive design** with fluid typography
+- ✅ **100% responsive design** with fluid typography and smart breakpoints
 - ✅ **4 breakpoint coverage** (desktop, tablet, mobile, small mobile)
 - ✅ **Animated mobile menu** with hamburger-to-X transition
-- ✅ **Full viewport hero section** (100vh on desktop)
+- ✅ **Full viewport hero section** with responsive sizing (100vh desktop, adaptive mobile)
 - ✅ **Smooth scrolling navigation** with keyboard support
 - ✅ **Email form validation** with real-time feedback
-- ✅ **Scroll animations** on cards and elements
+- ✅ **Scroll animations** on cards and elements with staggered delays
+- ✅ **Custom SVG icons** throughout all sections (no external icon libraries)
+- ✅ **Elegant logo hover effect** with gradient underline and icon animation
+- ✅ **Frosted glass effects** on cards and form inputs
+- ✅ **Gradient backgrounds** with decorative animated orbs
+- ✅ **Interactive hover states** with smooth transitions and visual feedback
 - ✅ **Touch-friendly interface** with 44px+ tap targets
 - ✅ **Accessible (WCAG compliance)** with semantic HTML and ARIA labels
 - ✅ **SEO optimized** with meta tags and structured content
