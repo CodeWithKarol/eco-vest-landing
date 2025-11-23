@@ -1,0 +1,1050 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>
+			Eco-Vest Landing Page - Customization Guide
+		</title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+
+			body {
+				font-family: -apple-system,
+					BlinkMacSystemFont, "Segoe UI", Roboto,
+					"Helvetica Neue", Arial, sans-serif;
+				line-height: 1.6;
+				color: #2d3748;
+				background: #f7fafc;
+				padding: 2rem 1rem;
+			}
+
+			.container {
+				max-width: 900px;
+				margin: 0 auto;
+				background: white;
+				padding: 3rem;
+				border-radius: 12px;
+				box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+			}
+
+			h1 {
+				color: #1a202c;
+				font-size: 2.5rem;
+				margin-bottom: 0.5rem;
+				border-bottom: 4px solid #7ac8a0;
+				padding-bottom: 1rem;
+			}
+
+			h2 {
+				color: #2d7d5e;
+				font-size: 1.75rem;
+				margin-top: 2.5rem;
+				margin-bottom: 1rem;
+				padding-left: 1rem;
+				border-left: 4px solid #7ac8a0;
+			}
+
+			h3 {
+				color: #2d3748;
+				font-size: 1.25rem;
+				margin-top: 1.5rem;
+				margin-bottom: 0.75rem;
+			}
+
+			p {
+				margin-bottom: 1rem;
+				color: #4a5568;
+			}
+
+			.intro {
+				background: linear-gradient(
+					135deg,
+					rgba(122, 200, 160, 0.1),
+					rgba(90, 184, 128, 0.1)
+				);
+				padding: 1.5rem;
+				border-radius: 8px;
+				margin-bottom: 2rem;
+				border-left: 4px solid #7ac8a0;
+			}
+
+			code {
+				background: #edf2f7;
+				padding: 0.2rem 0.5rem;
+				border-radius: 4px;
+				font-family: "Courier New", monospace;
+				color: #c7254e;
+				font-size: 0.9rem;
+			}
+
+			pre {
+				background: #2d3748;
+				color: #e2e8f0;
+				padding: 1.5rem;
+				border-radius: 8px;
+				overflow-x: auto;
+				margin: 1rem 0;
+				border: 1px solid #4a5568;
+			}
+
+			pre code {
+				background: none;
+				color: #e2e8f0;
+				padding: 0;
+			}
+
+			.tip {
+				background: #fef5e7;
+				border-left: 4px solid #f39c12;
+				padding: 1rem;
+				margin: 1rem 0;
+				border-radius: 4px;
+			}
+
+			.tip strong {
+				color: #d68910;
+			}
+
+			.warning {
+				background: #fdeaea;
+				border-left: 4px solid #e74c3c;
+				padding: 1rem;
+				margin: 1rem 0;
+				border-radius: 4px;
+			}
+
+			.warning strong {
+				color: #c0392b;
+			}
+
+			ul,
+			ol {
+				margin-left: 2rem;
+				margin-bottom: 1rem;
+			}
+
+			li {
+				margin-bottom: 0.5rem;
+				color: #4a5568;
+			}
+
+			.file-path {
+				background: #e6f7ef;
+				color: #2d7d5e;
+				padding: 0.2rem 0.6rem;
+				border-radius: 4px;
+				font-family: "Courier New", monospace;
+				font-weight: 600;
+			}
+
+			table {
+				width: 100%;
+				border-collapse: collapse;
+				margin: 1rem 0;
+			}
+
+			th,
+			td {
+				padding: 0.75rem;
+				text-align: left;
+				border-bottom: 1px solid #e2e8f0;
+			}
+
+			th {
+				background: #7ac8a0;
+				color: white;
+				font-weight: 600;
+			}
+
+			tr:hover {
+				background: #f7fafc;
+			}
+
+			.section-number {
+				display: inline-block;
+				width: 2rem;
+				height: 2rem;
+				background: #7ac8a0;
+				color: white;
+				border-radius: 50%;
+				text-align: center;
+				line-height: 2rem;
+				font-weight: bold;
+				margin-right: 0.5rem;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<h1>
+				🌱 Eco-Vest Landing Page Customization
+				Guide
+			</h1>
+
+			<div class="intro">
+				<p>
+					<strong>Welcome!</strong> This guide
+					will help you customize the Eco-Vest
+					landing page template for your own
+					product or service. Follow these
+					step-by-step instructions to personalize
+					every aspect of the page while
+					maintaining its modern, professional
+					design.
+				</p>
+			</div>
+
+			<h2>
+				<span class="section-number">1</span>Basic
+				Setup
+			</h2>
+
+			<h3>File Structure</h3>
+			<p>
+				The template consists of three main files:
+			</p>
+			<ul>
+				<li>
+					<span class="file-path"
+						>index.html</span
+					>
+					- Main HTML structure and content
+				</li>
+				<li>
+					<span class="file-path"
+						>styles.css</span
+					>
+					- All styling and responsive design
+				</li>
+				<li>
+					<span class="file-path">script.js</span>
+					- Interactive features and animations
+				</li>
+				<li>
+					<span class="file-path"
+						>favicon.svg</span
+					>
+					- Browser tab icon
+				</li>
+			</ul>
+
+			<div class="tip">
+				<strong>💡 Tip:</strong> Always make a
+				backup copy of the original files before
+				making changes. This allows you to revert
+				if needed.
+			</div>
+
+			<h2>
+				<span class="section-number">2</span
+				>Changing Colors & Branding
+			</h2>
+
+			<h3>Color Palette</h3>
+			<p>
+				Open
+				<span class="file-path">styles.css</span>
+				and find the <code>:root</code> section at
+				the top (around lines 1-20). Modify these
+				CSS custom properties:
+			</p>
+
+			<pre><code>:root {
+    --primary-green: #2d7d5e;      /* Main brand color */
+    --accent-green: #7ac8a0;       /* Accent highlights */
+    --light-green: #5ab88d;        /* Lighter accent */
+    --dark-text: #1a1a1a;          /* Headings */
+    --text-secondary: #666666;     /* Body text */
+    --bg-light: #f5f1e8;           /* Light backgrounds */
+}</code></pre>
+
+			<div class="tip">
+				<strong>💡 Tip:</strong> Use a color
+				picker tool or website like
+				<a
+					href="https://coolors.co"
+					target="_blank"
+					>Coolors.co</a
+				>
+				to generate a harmonious color palette
+				that matches your brand.
+			</div>
+
+			<h3>Logo & Brand Name</h3>
+			<p>
+				Update the logo text in
+				<span class="file-path">index.html</span>:
+			</p>
+
+			<ol>
+				<li>
+					Find the header navigation section
+					(around line 40-55)
+				</li>
+				<li>
+					Locate
+					<code>&lt;div class="logo"&gt;</code>
+				</li>
+				<li>
+					Change "Eco-Vest" to your brand name
+				</li>
+			</ol>
+
+			<pre><code>&lt;div class="logo"&gt;
+    &lt;div class="logo-icon"&gt;
+        &lt;!-- Keep or replace the SVG icon --&gt;
+    &lt;/div&gt;
+    Your Brand Name
+&lt;/div&gt;</code></pre>
+
+			<h2>
+				<span class="section-number">3</span
+				>Modifying Content Sections
+			</h2>
+
+			<h3>Hero Section (Main Banner)</h3>
+			<p>
+				Location:
+				<span class="file-path">index.html</span>
+				(lines 100-200)
+			</p>
+
+			<p>
+				<strong>To change the headline:</strong>
+			</p>
+			<pre><code>&lt;h1 class="hero-title"&gt;
+    Your Compelling Headline Here
+&lt;/h1&gt;</code></pre>
+
+			<p>
+				<strong>To change the subtitle:</strong>
+			</p>
+			<pre><code>&lt;p class="hero-subtitle"&gt;
+    Your descriptive subtitle explaining your value proposition
+&lt;/p&gt;</code></pre>
+
+			<p>
+				<strong>To modify statistics:</strong>
+			</p>
+			<pre><code>&lt;div class="stat-item"&gt;
+    &lt;div class="stat-number"&gt;100K+&lt;/div&gt;
+    &lt;div class="stat-label"&gt;Your Metric&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+			<div class="warning">
+				<strong>⚠️ Warning:</strong> Keep class
+				names unchanged to maintain styling. Only
+				modify the text content between HTML tags.
+			</div>
+
+			<h3>Features Section</h3>
+			<p>
+				Location:
+				<span class="file-path">index.html</span>
+				(around lines 600-900)
+			</p>
+
+			<p>
+				Each feature card follows this structure:
+			</p>
+			<pre><code>&lt;div class="feature-card"&gt;
+    &lt;div class="feature-number"&gt;01&lt;/div&gt;
+    &lt;h3 class="feature-title"&gt;Your Feature Title&lt;/h3&gt;
+    &lt;p class="feature-description"&gt;
+        Description of your feature and its benefits
+    &lt;/p&gt;
+&lt;/div&gt;</code></pre>
+
+			<p>To add or remove features:</p>
+			<ol>
+				<li>
+					Copy an entire
+					<code
+						>&lt;div
+						class="feature-card"&gt;...&lt;/div&gt;</code
+					>
+					block
+				</li>
+				<li>
+					Paste it where you want the new feature
+				</li>
+				<li>
+					Update the content and feature number
+				</li>
+				<li>
+					Adjust grid layout in CSS if adding more
+					than 6 features
+				</li>
+			</ol>
+
+			<h3>Testimonials Section</h3>
+			<p>
+				Location:
+				<span class="file-path">index.html</span>
+				(around lines 1500-1870)
+			</p>
+
+			<p>Each testimonial card contains:</p>
+			<pre><code>&lt;div class="testimonial-card"&gt;
+    &lt;div class="testimonial-quote"&gt;
+        "Your customer testimonial quote here"
+    &lt;/div&gt;
+    &lt;div class="testimonial-footer"&gt;
+        &lt;div class="testimonial-avatar"&gt;JD&lt;/div&gt;
+        &lt;div class="testimonial-author"&gt;
+            &lt;div class="author-name"&gt;John Doe&lt;/div&gt;
+            &lt;div class="author-role"&gt;Job Title&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;!-- Star rating SVGs --&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+			<p>
+				<strong
+					>To change avatar initials:</strong
+				>
+				Update the text inside
+				<code
+					>&lt;div
+					class="testimonial-avatar"&gt;</code
+				>
+			</p>
+			<p>
+				<strong>To change avatar color:</strong>
+				Find the corresponding CSS in
+				<span class="file-path">styles.css</span>
+				(search for ".testimonial-avatar")
+			</p>
+
+			<h2>
+				<span class="section-number">4</span
+				>Navigation Menu
+			</h2>
+
+			<p>
+				Location:
+				<span class="file-path">index.html</span>
+				(around lines 40-90)
+			</p>
+
+			<p>To add/remove menu items:</p>
+			<pre><code>&lt;nav class="nav-links"&gt;
+    &lt;a href="#section-id"&gt;Menu Item&lt;/a&gt;
+    &lt;a href="#another-section"&gt;Another Item&lt;/a&gt;
+&lt;/nav&gt;</code></pre>
+
+			<div class="tip">
+				<strong>💡 Tip:</strong> The
+				<code>href="#section-id"</code> should
+				match the <code>id</code> attribute of the
+				section you want to scroll to. The smooth
+				scrolling is handled automatically by
+				JavaScript.
+			</div>
+
+			<h2>
+				<span class="section-number">5</span
+				>Call-to-Action (CTA) Section
+			</h2>
+
+			<p>
+				Location:
+				<span class="file-path">index.html</span>
+				(around lines 1870-2136)
+			</p>
+
+			<h3>Email Form</h3>
+			<p>
+				The CTA section includes an email signup
+				form. To customize:
+			</p>
+
+			<pre><code>&lt;div class="cta-title"&gt;
+    Your Call to Action &lt;span class="gradient-text-cta"&gt;Headline&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;form class="cta-form"&gt;
+    &lt;input 
+        type="email" 
+        placeholder="Enter your email"
+        class="cta-input"
+    /&gt;
+    &lt;button type="submit" class="cta-button"&gt;
+        Get Started
+    &lt;/button&gt;
+&lt;/form&gt;</code></pre>
+
+			<p>
+				<strong
+					>To connect the form to your email
+					service:</strong
+				>
+			</p>
+			<ol>
+				<li>
+					Open
+					<span class="file-path">script.js</span>
+				</li>
+				<li>
+					Find the form submission handler (around
+					lines 100-150)
+				</li>
+				<li>
+					Replace the placeholder URL with your
+					email service API endpoint
+				</li>
+				<li>
+					Update the data format to match your
+					service requirements
+				</li>
+			</ol>
+
+			<h2>
+				<span class="section-number">6</span
+				>Footer Customization
+			</h2>
+
+			<p>
+				Location:
+				<span class="file-path">index.html</span>
+				(around lines 2136-2290)
+			</p>
+
+			<h3>Social Media Links</h3>
+			<pre><code>&lt;a href="https://twitter.com/yourhandle" aria-label="X" class="social-link"&gt;
+    &lt;!-- SVG icon --&gt;
+&lt;/a&gt;</code></pre>
+
+			<p>
+				Update the <code>href</code> attributes
+				with your social media URLs.
+			</p>
+
+			<h3>Footer Links</h3>
+			<p>
+				The footer contains four columns of links.
+				Each column follows this structure:
+			</p>
+
+			<pre><code>&lt;div class="footer-column"&gt;
+    &lt;h4&gt;Column Title&lt;/h4&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;a href="#"&gt;Link 1&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;Link 2&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;Link 3&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;</code></pre>
+
+			<h3>Copyright & Trust Badges</h3>
+			<pre><code>&lt;div class="footer-copyright"&gt;
+    © 2025 Your Company Name. All rights reserved.
+&lt;/div&gt;
+
+&lt;div class="footer-badges"&gt;
+    &lt;div class="footer-badge"&gt;
+        &lt;!-- Icon SVG --&gt;
+        Your Badge Text
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+			<h2>
+				<span class="section-number">7</span
+				>Typography Changes
+			</h2>
+
+			<p>
+				Location:
+				<span class="file-path">styles.css</span>
+				(around lines 30-50)
+			</p>
+
+			<h3>Changing Fonts</h3>
+			<p>
+				The template uses Inter and Poppins from
+				Google Fonts. To use different fonts:
+			</p>
+
+			<ol>
+				<li>
+					Find the Google Fonts link in
+					<span class="file-path"
+						>index.html</span
+					>
+					head section
+				</li>
+				<li>
+					Replace with your chosen fonts from
+					<a
+						href="https://fonts.google.com"
+						target="_blank"
+						>Google Fonts</a
+					>
+				</li>
+				<li>
+					Update CSS font-family declarations
+				</li>
+			</ol>
+
+			<pre><code>body {
+    font-family: 'Your Font', sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Your Heading Font', serif;
+}</code></pre>
+
+			<h3>Font Sizes</h3>
+			<p>
+				The template uses <code>clamp()</code> for
+				fluid typography. Example:
+			</p>
+
+			<pre><code>.hero-title {
+    font-size: clamp(1.75rem, 5vw, 3.5rem);
+    /* min size, preferred size, max size */
+}</code></pre>
+
+			<h2>
+				<span class="section-number">8</span
+				>Images & Icons
+			</h2>
+
+			<h3>Favicon</h3>
+			<p>
+				Replace
+				<span class="file-path">favicon.svg</span>
+				with your own icon. Make sure it's 32×32px
+				or larger and in SVG format for best
+				quality.
+			</p>
+
+			<h3>Custom Icons</h3>
+			<p>
+				The template uses inline SVG icons
+				throughout. To replace an icon:
+			</p>
+
+			<ol>
+				<li>
+					Find the SVG element you want to replace
+				</li>
+				<li>
+					Visit
+					<a
+						href="https://heroicons.com"
+						target="_blank"
+						>Heroicons.com</a
+					>
+					or
+					<a
+						href="https://feathericons.com"
+						target="_blank"
+						>Feather Icons</a
+					>
+				</li>
+				<li>
+					Copy the SVG code of your chosen icon
+				</li>
+				<li>
+					Replace the existing SVG, keeping the
+					same class names
+				</li>
+			</ol>
+
+			<div class="tip">
+				<strong>💡 Tip:</strong> Maintain
+				consistent icon sizes by keeping the
+				<code>width</code> and
+				<code>height</code> attributes the same as
+				the original.
+			</div>
+
+			<h2>
+				<span class="section-number">9</span
+				>Responsive Design
+			</h2>
+
+			<p>
+				The template is fully responsive with
+				breakpoints at:
+			</p>
+
+			<table>
+				<thead>
+					<tr>
+						<th>Breakpoint</th>
+						<th>Screen Size</th>
+						<th>Layout</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Desktop</td>
+						<td>1024px+</td>
+						<td>Full multi-column layouts</td>
+					</tr>
+					<tr>
+						<td>Tablet</td>
+						<td>768px - 1023px</td>
+						<td>2-column or single-column</td>
+					</tr>
+					<tr>
+						<td>Mobile</td>
+						<td>481px - 767px</td>
+						<td>Single-column, stacked</td>
+					</tr>
+					<tr>
+						<td>Small Mobile</td>
+						<td>≤ 480px</td>
+						<td>Compact single-column</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<p>
+				To modify responsive behavior, edit the
+				<code>@media</code> queries in
+				<span class="file-path">styles.css</span>.
+			</p>
+
+			<div class="warning">
+				<strong>⚠️ Warning:</strong> Test your
+				changes on multiple screen sizes using
+				browser developer tools before deploying.
+			</div>
+
+			<h2>
+				<span class="section-number">10</span
+				>Animation & Interactions
+			</h2>
+
+			<p>
+				Location:
+				<span class="file-path">script.js</span>
+				and
+				<span class="file-path">styles.css</span>
+			</p>
+
+			<h3>Scroll Animations</h3>
+			<p>
+				Cards fade in as you scroll. To adjust
+				animation speed:
+			</p>
+
+			<pre><code>/* In styles.css */
+.fade-in {
+    transition: all 0.8s ease;  /* Change duration here */
+}</code></pre>
+
+			<h3>Hover Effects</h3>
+			<p>
+				To modify hover effects, find the relevant
+				class with <code>:hover</code> in CSS:
+			</p>
+
+			<pre><code>.feature-card:hover {
+    transform: translateY(-8px);  /* Lift height */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}</code></pre>
+
+			<h2>
+				<span class="section-number">11</span>SEO
+				Optimization
+			</h2>
+
+			<h3>Meta Tags</h3>
+			<p>
+				Update these in the
+				<code>&lt;head&gt;</code> section of
+				<span class="file-path">index.html</span>:
+			</p>
+
+			<pre><code>&lt;meta name="description" content="Your page description here" /&gt;
+&lt;meta name="keywords" content="keyword1, keyword2, keyword3" /&gt;
+&lt;meta name="author" content="Your Company Name" /&gt;
+&lt;title&gt;Your Page Title | Your Brand&lt;/title&gt;</code></pre>
+
+			<div class="tip">
+				<strong>💡 Tip:</strong> Keep descriptions
+				between 120-160 characters for optimal
+				display in search results.
+			</div>
+
+			<h2>
+				<span class="section-number">12</span
+				>Deployment
+			</h2>
+
+			<h3>Before Going Live</h3>
+			<ul>
+				<li>
+					✅ Test on multiple browsers (Chrome,
+					Firefox, Safari, Edge)
+				</li>
+				<li>
+					✅ Test on mobile devices (actual
+					devices, not just emulators)
+				</li>
+				<li>
+					✅ Validate HTML using
+					<a
+						href="https://validator.w3.org"
+						target="_blank"
+						>W3C Validator</a
+					>
+				</li>
+				<li>✅ Check all links work correctly</li>
+				<li>✅ Test form submissions</li>
+				<li>
+					✅ Optimize images for web (compress,
+					convert to WebP)
+				</li>
+				<li>✅ Update all placeholder content</li>
+				<li>
+					✅ Add your privacy policy and terms
+					links
+				</li>
+			</ul>
+
+			<h3>Hosting Options</h3>
+			<p>
+				This is a static site that can be hosted
+				on:
+			</p>
+			<ul>
+				<li>
+					<strong>Netlify</strong> - Drag and drop
+					deployment, free tier available
+				</li>
+				<li>
+					<strong>Vercel</strong> - GitHub
+					integration, automatic deployments
+				</li>
+				<li>
+					<strong>GitHub Pages</strong> - Free
+					hosting directly from your repository
+				</li>
+				<li>
+					<strong>AWS S3 + CloudFront</strong> -
+					Enterprise-grade hosting and CDN
+				</li>
+				<li>
+					<strong>Traditional hosting</strong> -
+					Upload via FTP to any web server
+				</li>
+			</ul>
+
+			<h2>
+				<span class="section-number">13</span
+				>Troubleshooting
+			</h2>
+
+			<h3>Common Issues</h3>
+
+			<p>
+				<strong
+					>Issue: Changes not showing up</strong
+				>
+			</p>
+			<ul>
+				<li>
+					Clear browser cache (Ctrl+Shift+R or
+					Cmd+Shift+R)
+				</li>
+				<li>Check if files are saved</li>
+				<li>Verify file paths are correct</li>
+			</ul>
+
+			<p>
+				<strong
+					>Issue: Layout broken on mobile</strong
+				>
+			</p>
+			<ul>
+				<li>
+					Check for missing closing tags in HTML
+				</li>
+				<li>Verify media queries in CSS</li>
+				<li>
+					Use browser dev tools to inspect
+					elements
+				</li>
+			</ul>
+
+			<p>
+				<strong
+					>Issue: Form not submitting</strong
+				>
+			</p>
+			<ul>
+				<li>
+					Check JavaScript console for errors
+					(F12)
+				</li>
+				<li>Verify form action URL is correct</li>
+				<li>
+					Test with a simple alert to isolate the
+					issue
+				</li>
+			</ul>
+
+			<h2>
+				<span class="section-number">14</span>Best
+				Practices
+			</h2>
+
+			<ul>
+				<li>
+					🎨
+					<strong>Maintain consistency:</strong>
+					Use the same color scheme throughout
+				</li>
+				<li>
+					📝
+					<strong>Write clear copy:</strong> Focus
+					on benefits, not just features
+				</li>
+				<li>
+					🖼️
+					<strong>Optimize images:</strong>
+					Compress all images to reduce load time
+				</li>
+				<li>
+					♿
+					<strong>Keep accessibility:</strong>
+					Don't remove ARIA labels or alt text
+				</li>
+				<li>
+					📱
+					<strong>Test thoroughly:</strong> Check
+					on real devices, not just browser tools
+				</li>
+				<li>
+					🔒 <strong>Security:</strong> If adding
+					backend, sanitize all inputs
+				</li>
+				<li>
+					⚡ <strong>Performance:</strong> Keep
+					JavaScript minimal for fast loading
+				</li>
+				<li>
+					📊 <strong>Analytics:</strong> Add
+					Google Analytics or similar tracking
+				</li>
+			</ul>
+
+			<h2>
+				<span class="section-number">15</span
+				>Additional Resources
+			</h2>
+
+			<p><strong>Learning Resources:</strong></p>
+			<ul>
+				<li>
+					<a
+						href="https://developer.mozilla.org"
+						target="_blank"
+						>MDN Web Docs</a
+					>
+					- HTML, CSS, JavaScript reference
+				</li>
+				<li>
+					<a
+						href="https://css-tricks.com"
+						target="_blank"
+						>CSS-Tricks</a
+					>
+					- CSS tutorials and guides
+				</li>
+				<li>
+					<a
+						href="https://caniuse.com"
+						target="_blank"
+						>Can I Use</a
+					>
+					- Browser compatibility checker
+				</li>
+			</ul>
+
+			<p><strong>Tools:</strong></p>
+			<ul>
+				<li>
+					<a
+						href="https://coolors.co"
+						target="_blank"
+						>Coolors</a
+					>
+					- Color palette generator
+				</li>
+				<li>
+					<a
+						href="https://fonts.google.com"
+						target="_blank"
+						>Google Fonts</a
+					>
+					- Free web fonts
+				</li>
+				<li>
+					<a
+						href="https://heroicons.com"
+						target="_blank"
+						>Heroicons</a
+					>
+					- Beautiful SVG icons
+				</li>
+				<li>
+					<a
+						href="https://tinypng.com"
+						target="_blank"
+						>TinyPNG</a
+					>
+					- Image compression tool
+				</li>
+			</ul>
+
+			<div
+				class="intro"
+				style="margin-top: 3rem"
+			>
+				<p>
+					<strong>Need Help?</strong> If you
+					encounter issues not covered in this
+					guide, check the browser console for
+					error messages (F12), or review the
+					original template files for reference.
+					Remember to always work on a copy of the
+					files!
+				</p>
+			</div>
+
+			<hr
+				style="
+					margin: 3rem 0;
+					border: none;
+					border-top: 2px solid #e2e8f0;
+				"
+			/>
+
+			<p
+				style="
+					text-align: center;
+					color: #718096;
+					font-size: 0.9rem;
+				"
+			>
+				<strong>Happy customizing! 🚀</strong
+				><br />
+				Made with 🌱 for conscious businesses
+				everywhere
+			</p>
+		</div>
+	</body>
+</html>

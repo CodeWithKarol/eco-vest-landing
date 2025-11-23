@@ -1,1294 +1,2383 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Eco-Vest: Invest in your future and the planet with AI-powered sustainable finance."
-    />
-    <meta
-      name="keywords"
-      content="sustainable investing, ethical finance, personal finance app, ESG investing, impact investing"
-    />
-    <meta name="author" content="Eco-Vest" />
-    <title>Eco-Vest - Invest in Your Future. Invest in the Planet.</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <!-- Navigation Header -->
-    <header class="header">
-      <nav class="navbar">
-        <div class="nav-container">
-          <!-- Logo -->
-          <a href="#" class="logo">
-            <svg
-              class="logo-icon"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 100 100"
-              width="40"
-              height="40"
-            >
-              <defs>
-                <linearGradient
-                  id="logGrad"
-                  x1="0%"
-                  y1="0%"
-                  x2="100%"
-                  y2="100%"
-                >
-                  <stop
-                    offset="0%"
-                    style="stop-color: #2d7d5e; stop-opacity: 1"
-                  />
-                  <stop
-                    offset="100%"
-                    style="stop-color: #1a5a3f; stop-opacity: 1"
-                  />
-                </linearGradient>
-              </defs>
-              <!-- Bold circular background -->
-              <circle cx="50" cy="50" r="48" fill="url(#logGrad)" />
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<meta
+			name="description"
+			content="Eco-Vest: Invest in your future and the planet with AI-powered sustainable finance."
+		/>
+		<meta
+			name="keywords"
+			content="sustainable investing, ethical finance, personal finance app, ESG investing, impact investing"
+		/>
+		<meta
+			name="author"
+			content="Eco-Vest"
+		/>
+		<title>
+			Eco-Vest - Invest in Your Future. Invest in
+			the Planet.
+		</title>
+		<link
+			rel="icon"
+			type="image/svg+xml"
+			href="favicon.svg"
+		/>
+		<link
+			rel="stylesheet"
+			href="styles.css"
+		/>
+		<link
+			rel="preconnect"
+			href="https://fonts.googleapis.com"
+		/>
+		<link
+			rel="preconnect"
+			href="https://fonts.gstatic.com"
+			crossorigin
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<!-- Modern Navigation Header -->
+		<header class="header">
+			<div class="header-container">
+				<!-- Logo -->
+				<a
+					href="#"
+					class="logo"
+				>
+					<div class="logo-icon">
+						<svg
+							viewBox="0 0 32 32"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<circle
+								cx="16"
+								cy="16"
+								r="16"
+								fill="url(#logoGradient)"
+							/>
+							<path
+								d="M16 8L12 12H14V20H12L16 24L20 20H18V12H20L16 8Z"
+								fill="white"
+								opacity="0.95"
+							/>
+							<circle
+								cx="16"
+								cy="16"
+								r="2"
+								fill="white"
+							/>
+							<defs>
+								<linearGradient
+									id="logoGradient"
+									x1="0"
+									y1="0"
+									x2="32"
+									y2="32"
+									gradientUnits="userSpaceOnUse"
+								>
+									<stop
+										offset="0%"
+										stop-color="#2d7d5e"
+									/>
+									<stop
+										offset="100%"
+										stop-color="#4db380"
+									/>
+								</linearGradient>
+							</defs>
+						</svg>
+					</div>
+					<span class="logo-text">Eco-Vest</span>
+				</a>
 
-              <!-- Large stylized dollar sign with leaf -->
-              <g>
-                <!-- Dollar sign curves (left) -->
-                <path
-                  d="M 35 25 Q 35 35 45 35 Q 35 35 35 50 Q 35 65 45 65 Q 35 65 35 75"
-                  stroke="white"
-                  stroke-width="6"
-                  fill="none"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
+				<!-- Desktop Navigation -->
+				<nav class="nav-menu">
+					<a
+						href="#features"
+						class="nav-link"
+						>Features</a
+					>
+					<a
+						href="#how-it-works"
+						class="nav-link"
+						>How It Works</a
+					>
+					<a
+						href="#impact"
+						class="nav-link"
+						>Impact</a
+					>
+					<a
+						href="#testimonials"
+						class="nav-link"
+						>Testimonials</a
+					>
+				</nav>
 
-                <!-- Horizontal line 1 -->
-                <line
-                  x1="28"
-                  y1="38"
-                  x2="58"
-                  y2="38"
-                  stroke="white"
-                  stroke-width="5"
-                  stroke-linecap="round"
-                />
+				<!-- CTA Group -->
+				<div class="header-actions">
+					<button class="btn-secondary">
+						Sign In
+					</button>
+					<button class="btn-primary">
+						Get Started
+					</button>
+				</div>
 
-                <!-- Horizontal line 2 -->
-                <line
-                  x1="28"
-                  y1="62"
-                  x2="58"
-                  y2="62"
-                  stroke="white"
-                  stroke-width="5"
-                  stroke-linecap="round"
-                />
+				<!-- Mobile Menu Toggle -->
+				<button
+					class="mobile-toggle"
+					aria-label="Toggle menu"
+					aria-expanded="false"
+				>
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+			</div>
 
-                <!-- Leaf accent (right) -->
-                <path
-                  d="M 65 25 Q 75 35 75 50 Q 75 65 65 75 L 70 70 Q 78 60 78 50 Q 78 40 70 30 Z"
-                  fill="white"
-                  opacity="0.9"
-                />
+			<!-- Mobile Menu Overlay -->
+			<div class="mobile-menu">
+				<nav class="mobile-nav">
+					<a
+						href="#features"
+						class="mobile-link"
+						>Features</a
+					>
+					<a
+						href="#how-it-works"
+						class="mobile-link"
+						>How It Works</a
+					>
+					<a
+						href="#impact"
+						class="mobile-link"
+						>Impact</a
+					>
+					<a
+						href="#testimonials"
+						class="mobile-link"
+						>Testimonials</a
+					>
+					<div class="mobile-actions">
+						<button class="btn-secondary-mobile">
+							Sign In
+						</button>
+						<button class="btn-primary-mobile">
+							Get Started
+						</button>
+					</div>
+				</nav>
+			</div>
+		</header>
 
-                <!-- Leaf vein -->
-                <line
-                  x1="65"
-                  y1="25"
-                  x2="65"
-                  y2="75"
-                  stroke="white"
-                  stroke-width="2"
-                  opacity="0.4"
-                />
-              </g>
-            </svg>
-            <span class="logo-text">Eco-Vest</span>
-          </a>
+		<!-- Modern Hero Section -->
+		<section class="hero">
+			<div class="hero-container">
+				<!-- Left Content -->
+				<div class="hero-left">
+					<span class="hero-badge">
+						<svg
+							width="16"
+							height="16"
+							viewBox="0 0 16 16"
+							fill="none"
+						>
+							<circle
+								cx="8"
+								cy="8"
+								r="8"
+								fill="currentColor"
+								opacity="0.2"
+							/>
+							<path
+								d="M8 4L9 7L12 8L9 9L8 12L7 9L4 8L7 7L8 4Z"
+								fill="currentColor"
+							/>
+						</svg>
+						Sustainable Finance Platform
+					</span>
 
-          <!-- Mobile Menu Toggle -->
-          <button
-            class="menu-toggle"
-            aria-label="Toggle navigation menu"
-            aria-expanded="false"
-          >
-            <span class="line line-1"></span>
-            <span class="line line-2"></span>
-            <span class="line line-3"></span>
-          </button>
+					<h1 class="hero-title">
+						Invest in Your
+						<span class="gradient-text"
+							>Future</span
+						>
+						<br />Protect the
+						<span class="gradient-text"
+							>Planet</span
+						>
+					</h1>
 
-          <!-- Navigation Menu -->
-          <ul class="nav-menu">
-            <li>
-              <a href="#features">Features</a>
-            </li>
-            <li>
-              <a href="#how-it-works">How It Works</a>
-            </li>
-            <li>
-              <a href="#impact">Our Impact</a>
-            </li>
-            <li>
-              <a href="#testimonials">Testimonials</a>
-            </li>
-          </ul>
+					<p class="hero-description">
+						Join thousands of investors building
+						wealth while making a positive impact.
+						Our AI-powered platform makes
+						sustainable investing simple,
+						transparent, and rewarding.
+					</p>
 
-          <!-- CTA Button -->
-          <button class="btn btn-header-cta">Get Started</button>
-        </div>
-      </nav>
-    </header>
+					<div class="hero-actions">
+						<button
+							class="hero-btn hero-btn-primary"
+							id="scrollToCTA"
+						>
+							Get Started Free
+							<svg
+								width="20"
+								height="20"
+								viewBox="0 0 20 20"
+								fill="none"
+							>
+								<path
+									d="M7 10H13M13 10L10 7M13 10L10 13"
+									stroke="currentColor"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								/>
+							</svg>
+						</button>
+						<button
+							class="hero-btn hero-btn-secondary"
+						>
+							<svg
+								width="20"
+								height="20"
+								viewBox="0 0 20 20"
+								fill="none"
+							>
+								<circle
+									cx="10"
+									cy="10"
+									r="9"
+									stroke="currentColor"
+									stroke-width="2"
+								/>
+								<path
+									d="M8 7L13 10L8 13V7Z"
+									fill="currentColor"
+								/>
+							</svg>
+							Watch Demo
+						</button>
+					</div>
 
-    <!-- Hero Section -->
-    <section class="hero">
-      <div class="hero-wrapper">
-        <div class="hero-content">
-          <div class="hero-badge">
-            <span>✨</span> Join the sustainable investing revolution
-          </div>
-          <h1 class="hero-title">
-            Invest in Your Future.<br />
-            <span class="highlight">Invest in the Planet</span>
-          </h1>
-          <p class="hero-subtitle">
-            Align your investments with your values. Our AI-powered platform
-            makes sustainable investing simple, transparent, and rewarding.
-          </p>
-          <div class="hero-cta">
-            <button class="btn btn-primary btn-lg" id="scrollToCTA">
-              Start Building Impact Today
-            </button>
-            <button class="btn btn-secondary btn-lg">Watch Demo</button>
-          </div>
-        </div>
+					<div class="hero-stats">
+						<div class="stat">
+							<div class="stat-value">50K+</div>
+							<div class="stat-label">
+								Active Investors
+							</div>
+						</div>
+						<div class="stat-divider"></div>
+						<div class="stat">
+							<div class="stat-value">$2.5M+</div>
+							<div class="stat-label">
+								Invested
+							</div>
+						</div>
+						<div class="stat-divider"></div>
+						<div class="stat">
+							<div class="stat-value">100K+</div>
+							<div class="stat-label">
+								Trees Protected
+							</div>
+						</div>
+					</div>
+				</div>
 
-        <!-- Hero Visual - Modern Abstract Design -->
-        <div class="hero-visual">
-          <div class="hero-graphic">
-            <!-- Floating cards -->
-            <div class="floating-card card-1">
-              <div class="card-icon">📈</div>
-              <div class="card-label">+8.5% Returns</div>
-            </div>
-            <div class="floating-card card-2">
-              <div class="card-icon">🌍</div>
-              <div class="card-label">100K Trees</div>
-            </div>
-            <div class="floating-card card-3">
-              <div class="card-icon">✓</div>
-              <div class="card-label">Verified Impact</div>
-            </div>
+				<!-- Right Visual -->
+				<div class="hero-right">
+					<div class="hero-visual">
+						<!-- Main Feature Card -->
+						<div class="feature-card main-card">
+							<div class="card-header">
+								<span class="card-title"
+									>Portfolio Growth</span
+								>
+								<span class="card-badge"
+									>+12.4%</span
+								>
+							</div>
+							<div class="chart-placeholder">
+								<svg
+									viewBox="0 0 200 80"
+									fill="none"
+								>
+									<path
+										d="M 0 60 Q 50 50, 100 30 T 200 10"
+										stroke="url(#chartGradient)"
+										stroke-width="3"
+										fill="none"
+									/>
+									<defs>
+										<linearGradient
+											id="chartGradient"
+											x1="0%"
+											y1="0%"
+											x2="100%"
+											y2="0%"
+										>
+											<stop
+												offset="0%"
+												stop-color="#2d7d5e"
+											/>
+											<stop
+												offset="100%"
+												stop-color="#7ac8a0"
+											/>
+										</linearGradient>
+									</defs>
+								</svg>
+							</div>
+						</div>
 
-            <!-- Background gradient orbs -->
-            <div class="gradient-orb orb-1"></div>
-            <div class="gradient-orb orb-2"></div>
-            <div class="gradient-orb orb-3"></div>
-          </div>
-        </div>
-      </div>
+						<!-- Floating Info Cards -->
+						<div class="info-card info-card-1">
+							<div class="info-icon">🌱</div>
+							<div class="info-content">
+								<div class="info-label">
+									Carbon Offset
+								</div>
+								<div class="info-value">
+									2.4 tons
+								</div>
+							</div>
+						</div>
 
-      <!-- Stats Bar -->
-      <div class="hero-stats">
-        <div class="stat-item">
-          <div class="stat-number">50K+</div>
-          <div class="stat-label">Active Users</div>
-        </div>
-        <div class="stat-item">
-          <div class="stat-number">$2.5M</div>
-          <div class="stat-label">Invested Sustainably</div>
-        </div>
-        <div class="stat-item">
-          <div class="stat-number">100K+</div>
-          <div class="stat-label">Trees Protected</div>
-        </div>
-        <div class="stat-item">
-          <div class="stat-number">50+</div>
-          <div class="stat-label">Green Companies</div>
-        </div>
-      </div>
-    </section>
+						<div class="info-card info-card-2">
+							<div class="info-icon">⚡</div>
+							<div class="info-content">
+								<div class="info-label">
+									Clean Energy
+								</div>
+								<div class="info-value">85%</div>
+							</div>
+						</div>
 
-    <!-- USP Section -->
-    <section class="usp">
-      <div class="container">
-        <div class="usp-header">
-          <h2>Why Choose Eco-Vest?</h2>
-          <p class="section-subtitle">
-            We've reimagined sustainable investing. Get the best of both worlds:
-            strong returns and real-world impact.
-          </p>
-        </div>
+						<div class="info-card info-card-3">
+							<div class="info-icon">✓</div>
+							<div class="info-content">
+								<div class="info-label">
+									ESG Verified
+								</div>
+								<div class="info-value">AAA</div>
+							</div>
+						</div>
 
-        <div class="usp-grid">
-          <!-- Card 1 -->
-          <div class="usp-card">
-            <div class="usp-card-top">
-              <div class="usp-icon-wrapper">
-                <svg
-                  class="usp-icon"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 64 64"
-                >
-                  <circle
-                    cx="32"
-                    cy="32"
-                    r="30"
-                    fill="rgba(45, 125, 94, 0.1)"
-                  />
-                  <g transform="translate(32, 32)">
-                    <path
-                      d="M -8 4 L 0 -8 L 8 4 M 0 -8 L 0 10"
-                      stroke="#2d7d5e"
-                      stroke-width="2.5"
-                      fill="none"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <circle cx="0" cy="-8" r="3" fill="#2d7d5e" />
-                    <circle cx="0" cy="10" r="3" fill="#2d7d5e" />
-                  </g>
-                </svg>
-              </div>
-              <h3>AI-Powered Automation</h3>
-            </div>
-            <p>
-              Intelligent algorithms automatically match your savings and
-              investments to sustainable opportunities aligned with your values.
-            </p>
-            <a href="#" class="usp-link">Learn more →</a>
-          </div>
+						<!-- Decorative Elements -->
+						<div
+							class="hero-blur hero-blur-1"
+						></div>
+						<div
+							class="hero-blur hero-blur-2"
+						></div>
+					</div>
+				</div>
+			</div>
+		</section>
 
-          <!-- Card 2 -->
-          <div class="usp-card">
-            <div class="usp-card-top">
-              <div class="usp-icon-wrapper">
-                <svg
-                  class="usp-icon"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 64 64"
-                >
-                  <circle
-                    cx="32"
-                    cy="32"
-                    r="30"
-                    fill="rgba(45, 125, 94, 0.1)"
-                  />
-                  <g transform="translate(32, 32)">
-                    <circle
-                      cx="-6"
-                      cy="-6"
-                      r="4"
-                      fill="none"
-                      stroke="#2d7d5e"
-                      stroke-width="2"
-                    />
-                    <circle
-                      cx="6"
-                      cy="-6"
-                      r="4"
-                      fill="none"
-                      stroke="#2d7d5e"
-                      stroke-width="2"
-                    />
-                    <circle cx="-6" cy="6" r="4" fill="#2d7d5e" />
-                    <circle
-                      cx="6"
-                      cy="6"
-                      r="4"
-                      fill="none"
-                      stroke="#2d7d5e"
-                      stroke-width="2"
-                    />
-                    <path
-                      d="M -6 -2 L 6 -2 M -10 0 L 10 0 M -6 2 L 6 2"
-                      stroke="#2d7d5e"
-                      stroke-width="1.5"
-                      opacity="0.3"
-                    />
-                  </g>
-                </svg>
-              </div>
-              <h3>Verified Impact</h3>
-            </div>
-            <p>
-              Real-time dashboard showing your direct contribution to
-              environmental and social causes with transparent impact reports.
-            </p>
-            <a href="#" class="usp-link">Learn more →</a>
-          </div>
+		<!-- Modern USP Section -->
+		<section class="usp">
+			<div class="usp-container">
+				<div class="usp-header">
+					<span class="usp-badge"
+						>Why Eco-Vest</span
+					>
+					<h2 class="usp-title">
+						Built for
+						<span class="gradient-text"
+							>Impact-Driven</span
+						>
+						Investors
+					</h2>
+					<p class="usp-subtitle">
+						Experience sustainable investing that
+						doesn't compromise on returns. Our
+						platform combines cutting-edge
+						technology with environmental
+						responsibility.
+					</p>
+				</div>
 
-          <!-- Card 3 -->
-          <div class="usp-card">
-            <div class="usp-card-top">
-              <div class="usp-icon-wrapper">
-                <svg
-                  class="usp-icon"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 64 64"
-                >
-                  <circle
-                    cx="32"
-                    cy="32"
-                    r="30"
-                    fill="rgba(45, 125, 94, 0.1)"
-                  />
-                  <g transform="translate(32, 32)">
-                    <path
-                      d="M -8 8 L -8 -4 L 0 -10 L 8 -4 L 8 8"
-                      stroke="#2d7d5e"
-                      stroke-width="2"
-                      fill="none"
-                      stroke-linejoin="round"
-                    />
-                    <rect
-                      x="-4"
-                      y="0"
-                      width="8"
-                      height="8"
-                      fill="#2d7d5e"
-                      opacity="0.3"
-                    />
-                    <circle cx="0" cy="0" r="2" fill="#2d7d5e" />
-                  </g>
-                </svg>
-              </div>
-              <h3>Smart Growth</h3>
-            </div>
-            <p>
-              Achieve strong financial returns while supporting companies
-              leading in sustainability and ethical practices.
-            </p>
-            <a href="#" class="usp-link">Learn more →</a>
-          </div>
+				<div class="usp-grid">
+					<!-- Feature 1 -->
+					<div class="usp-item">
+						<div class="usp-icon">
+							<svg
+								width="24"
+								height="24"
+								viewBox="0 0 24 24"
+								fill="none"
+							>
+								<path
+									d="M12 2L15 8L22 9L17 14L18 21L12 18L6 21L7 14L2 9L9 8L12 2Z"
+									stroke="currentColor"
+									stroke-width="2"
+									stroke-linejoin="round"
+								/>
+							</svg>
+						</div>
+						<h3>AI-Powered Insights</h3>
+						<p>
+							Smart algorithms match your
+							investments with sustainable
+							opportunities aligned to your values
+							and financial goals.
+						</p>
+					</div>
 
-          <!-- Card 4 -->
-          <div class="usp-card">
-            <div class="usp-card-top">
-              <div class="usp-icon-wrapper">
-                <svg
-                  class="usp-icon"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 64 64"
-                >
-                  <circle
-                    cx="32"
-                    cy="32"
-                    r="30"
-                    fill="rgba(45, 125, 94, 0.1)"
-                  />
-                  <g transform="translate(32, 32)">
-                    <rect
-                      x="-8"
-                      y="-8"
-                      width="16"
-                      height="16"
-                      rx="2"
-                      fill="none"
-                      stroke="#2d7d5e"
-                      stroke-width="2"
-                    />
-                    <path
-                      d="M -4 -8 L -4 8 M 4 -8 L 4 8"
-                      stroke="#2d7d5e"
-                      stroke-width="1.5"
-                      opacity="0.3"
-                    />
-                    <circle
-                      cx="-4"
-                      cy="0"
-                      r="2.5"
-                      fill="#2d7d5e"
-                      opacity="0.6"
-                    />
-                    <circle cx="4" cy="0" r="2.5" fill="#2d7d5e" />
-                  </g>
-                </svg>
-              </div>
-              <h3>Complete Transparency</h3>
-            </div>
-            <p>
-              Know exactly where your money goes. Detailed breakdowns of every
-              investment and its environmental impact metrics.
-            </p>
-            <a href="#" class="usp-link">Learn more →</a>
-          </div>
-        </div>
-      </div>
-    </section>
+					<!-- Feature 2 -->
+					<div class="usp-item">
+						<div class="usp-icon">
+							<svg
+								width="24"
+								height="24"
+								viewBox="0 0 24 24"
+								fill="none"
+							>
+								<circle
+									cx="12"
+									cy="12"
+									r="10"
+									stroke="currentColor"
+									stroke-width="2"
+								/>
+								<path
+									d="M12 6V12L16 14"
+									stroke="currentColor"
+									stroke-width="2"
+									stroke-linecap="round"
+								/>
+							</svg>
+						</div>
+						<h3>Real-Time Impact</h3>
+						<p>
+							Track your environmental
+							contribution with transparent,
+							real-time dashboards showing carbon
+							offset and social impact.
+						</p>
+					</div>
 
-    <!-- Features Section -->
-    <section class="features" id="features">
-      <div class="container">
-        <div class="features-header">
-          <h2>Smart Features for Smart Investors</h2>
-          <p class="section-subtitle">
-            Everything you need to invest with confidence and impact.
-          </p>
-        </div>
+					<!-- Feature 3 -->
+					<div class="usp-item">
+						<div class="usp-icon">
+							<svg
+								width="24"
+								height="24"
+								viewBox="0 0 24 24"
+								fill="none"
+							>
+								<path
+									d="M3 13L9 19L21 7"
+									stroke="currentColor"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								/>
+							</svg>
+						</div>
+						<h3>Verified Returns</h3>
+						<p>
+							Achieve competitive financial
+							returns while supporting
+							ESG-verified companies leading
+							sustainable practices.
+						</p>
+					</div>
 
-        <div class="features-grid">
-          <!-- Feature 1 -->
-          <div class="feature-item">
-            <div class="feature-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-                <circle cx="32" cy="32" r="30" fill="rgba(45, 125, 94, 0.1)" />
-                <g transform="translate(32, 32)">
-                  <circle cx="0" cy="0" r="3" fill="#2d7d5e" />
-                  <circle cx="-8" cy="-4" r="3" fill="#2d7d5e" opacity="0.6" />
-                  <circle cx="8" cy="6" r="3" fill="#2d7d5e" opacity="0.6" />
-                  <path
-                    d="M 0 0 L -8 -4 M 0 0 L 8 6"
-                    stroke="#2d7d5e"
-                    stroke-width="1.5"
-                    opacity="0.3"
-                  />
-                </g>
-              </svg>
-            </div>
-            <h3>Automated Savings Plans</h3>
-            <p>
-              Set it and forget it. Our AI creates personalized savings
-              schedules that align with your financial goals and values.
-            </p>
-            <div class="feature-meta">
-              <span class="feature-badge">AI-Powered</span>
-            </div>
-          </div>
+					<!-- Feature 4 -->
+					<div class="usp-item">
+						<div class="usp-icon">
+							<svg
+								width="24"
+								height="24"
+								viewBox="0 0 24 24"
+								fill="none"
+							>
+								<rect
+									x="3"
+									y="3"
+									width="18"
+									height="18"
+									rx="2"
+									stroke="currentColor"
+									stroke-width="2"
+								/>
+								<path
+									d="M9 9H15M9 15H15"
+									stroke="currentColor"
+									stroke-width="2"
+									stroke-linecap="round"
+								/>
+							</svg>
+						</div>
+						<h3>Full Transparency</h3>
+						<p>
+							See exactly where every dollar goes
+							with detailed breakdowns and
+							complete visibility into your
+							portfolio's impact.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
 
-          <!-- Feature 2 -->
-          <div class="feature-item">
-            <div class="feature-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-                <circle cx="32" cy="32" r="30" fill="rgba(45, 125, 94, 0.1)" />
-                <g transform="translate(32, 32)">
-                  <rect
-                    x="-8"
-                    y="-6"
-                    width="5"
-                    height="12"
-                    fill="#2d7d5e"
-                    opacity="0.6"
-                  />
-                  <rect x="-1" y="-8" width="5" height="14" fill="#2d7d5e" />
-                  <rect
-                    x="6"
-                    y="-4"
-                    width="5"
-                    height="10"
-                    fill="#2d7d5e"
-                    opacity="0.6"
-                  />
-                  <line
-                    x1="-10"
-                    y1="8"
-                    x2="12"
-                    y2="8"
-                    stroke="#2d7d5e"
-                    stroke-width="1.5"
-                  />
-                </g>
-              </svg>
-            </div>
-            <h3>Sustainable Portfolio Builder</h3>
-            <p>
-              Curated portfolios of ESG-rated companies. Choose from predefined
-              strategies or create your own impact-focused mix.
-            </p>
-            <div class="feature-meta">
-              <span class="feature-badge">Customizable</span>
-            </div>
-          </div>
+		<!-- Features Section -->
+		<section
+			class="features"
+			id="features"
+		>
+			<div class="features-container">
+				<!-- Section Header -->
+				<div class="features-header">
+					<span class="features-label"
+						>Features</span
+					>
+					<h2 class="features-title">
+						Investing Made
+						<span class="gradient-text"
+							>Simple</span
+						>
+						&
+						<span class="gradient-text"
+							>Sustainable</span
+						>
+					</h2>
+					<p class="features-description">
+						Discover powerful tools designed to
+						help you grow your wealth while making
+						a positive impact on the world.
+					</p>
+				</div>
 
-          <!-- Feature 3 -->
-          <div class="feature-item">
-            <div class="feature-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-                <circle cx="32" cy="32" r="30" fill="rgba(45, 125, 94, 0.1)" />
-                <g transform="translate(32, 32)">
-                  <circle
-                    cx="0"
-                    cy="0"
-                    r="8"
-                    fill="none"
-                    stroke="#2d7d5e"
-                    stroke-width="1.5"
-                  />
-                  <path
-                    d="M -4 -4 L 4 4 M 4 -4 L -4 4"
-                    stroke="#2d7d5e"
-                    stroke-width="1.5"
-                    opacity="0.4"
-                  />
-                  <circle cx="-6" cy="-6" r="2" fill="#2d7d5e" />
-                  <circle cx="6" cy="6" r="2" fill="#2d7d5e" opacity="0.6" />
-                </g>
-              </svg>
-            </div>
-            <h3>Impact Dashboard</h3>
-            <p>
-              Visualize your positive environmental and social impact. See which
-              causes you've supported and how much change you've created.
-            </p>
-            <div class="feature-meta">
-              <span class="feature-badge">Real-time</span>
-            </div>
-          </div>
+				<!-- Features Grid -->
+				<div class="features-grid">
+					<!-- Feature Card 1 -->
+					<article class="feature-card">
+						<div class="feature-card-inner">
+							<div class="feature-icon-wrapper">
+								<div class="feature-icon">
+									<svg
+										width="28"
+										height="28"
+										viewBox="0 0 28 28"
+										fill="none"
+									>
+										<path
+											d="M14 4L16.5 11.5L24 14L16.5 16.5L14 24L11.5 16.5L4 14L11.5 11.5L14 4Z"
+											stroke="currentColor"
+											stroke-width="2"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										/>
+									</svg>
+								</div>
+							</div>
+							<div class="feature-content">
+								<h3 class="feature-title">
+									AI-Powered Automation
+								</h3>
+								<p class="feature-text">
+									Let our intelligent algorithms
+									handle your investment strategy.
+									Automated rebalancing and smart
+									portfolio adjustments in
+									real-time.
+								</p>
+								<div class="feature-tags">
+									<span class="feature-tag"
+										>Smart</span
+									>
+									<span class="feature-tag"
+										>Automated</span
+									>
+								</div>
+							</div>
+						</div>
+					</article>
 
-          <!-- Feature 4 -->
-          <div class="feature-item">
-            <div class="feature-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-                <circle cx="32" cy="32" r="30" fill="rgba(45, 125, 94, 0.1)" />
-                <g transform="translate(32, 32)">
-                  <path
-                    d="M -8 -6 L -8 8 L 8 8 L 8 -6"
-                    stroke="#2d7d5e"
-                    stroke-width="2"
-                    fill="none"
-                    stroke-linecap="round"
-                  />
-                  <path
-                    d="M -4 -6 L -4 2 M 0 -6 L 0 2 M 4 -6 L 4 2"
-                    stroke="#2d7d5e"
-                    stroke-width="1.5"
-                    opacity="0.4"
-                  />
-                  <circle cx="0" cy="8" r="1.5" fill="#2d7d5e" />
-                </g>
-              </svg>
-            </div>
-            <h3>Educational Resources</h3>
-            <p>
-              Learn ethical investing through our blog, video tutorials, and
-              expert-led webinars on sustainable finance best practices.
-            </p>
-            <div class="feature-meta">
-              <span class="feature-badge">Learning Hub</span>
-            </div>
-          </div>
+					<!-- Feature Card 2 -->
+					<article class="feature-card">
+						<div class="feature-card-inner">
+							<div class="feature-icon-wrapper">
+								<div class="feature-icon">
+									<svg
+										width="28"
+										height="28"
+										viewBox="0 0 28 28"
+										fill="none"
+									>
+										<path
+											d="M4 14C4 19.5228 8.47715 24 14 24C19.5228 24 24 19.5228 24 14C24 8.47715 19.5228 4 14 4"
+											stroke="currentColor"
+											stroke-width="2"
+											stroke-linecap="round"
+										/>
+										<path
+											d="M14 8V14L18 16"
+											stroke="currentColor"
+											stroke-width="2"
+											stroke-linecap="round"
+										/>
+									</svg>
+								</div>
+							</div>
+							<div class="feature-content">
+								<h3 class="feature-title">
+									ESG Portfolio Tracking
+								</h3>
+								<p class="feature-text">
+									Monitor your Environmental,
+									Social, and Governance impact.
+									See exactly where your money
+									goes and the change it creates.
+								</p>
+								<div class="feature-tags">
+									<span class="feature-tag"
+										>Real-time</span
+									>
+									<span class="feature-tag"
+										>Transparent</span
+									>
+								</div>
+							</div>
+						</div>
+					</article>
 
-          <!-- Feature 5 -->
-          <div class="feature-item">
-            <div class="feature-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-                <circle cx="32" cy="32" r="30" fill="rgba(45, 125, 94, 0.1)" />
-                <g transform="translate(32, 32)">
-                  <circle
-                    cx="-6"
-                    cy="-4"
-                    r="3.5"
-                    fill="none"
-                    stroke="#2d7d5e"
-                    stroke-width="1.5"
-                  />
-                  <circle cx="0" cy="0" r="3.5" fill="#2d7d5e" opacity="0.7" />
-                  <circle
-                    cx="6"
-                    cy="-4"
-                    r="3.5"
-                    fill="none"
-                    stroke="#2d7d5e"
-                    stroke-width="1.5"
-                  />
-                  <path
-                    d="M -5 -1 L 1 3 M 0 3 L 6 -1"
-                    stroke="#2d7d5e"
-                    stroke-width="1.5"
-                    opacity="0.4"
-                  />
-                </g>
-              </svg>
-            </div>
-            <h3>Community Challenges</h3>
-            <p>
-              Join thousands of conscious investors. Complete sustainability
-              challenges and unlock rewards while building together.
-            </p>
-            <div class="feature-meta">
-              <span class="feature-badge">Social</span>
-            </div>
-          </div>
+					<!-- Feature Card 3 -->
+					<article class="feature-card">
+						<div class="feature-card-inner">
+							<div class="feature-icon-wrapper">
+								<div class="feature-icon">
+									<svg
+										width="28"
+										height="28"
+										viewBox="0 0 28 28"
+										fill="none"
+									>
+										<path
+											d="M4 22V12L14 4L24 12V22"
+											stroke="currentColor"
+											stroke-width="2"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										/>
+										<path
+											d="M10 22V16H18V22"
+											stroke="currentColor"
+											stroke-width="2"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										/>
+									</svg>
+								</div>
+							</div>
+							<div class="feature-content">
+								<h3 class="feature-title">
+									Diversified Options
+								</h3>
+								<p class="feature-text">
+									From clean energy to sustainable
+									agriculture. Build a balanced
+									portfolio across multiple impact
+									sectors and asset classes.
+								</p>
+								<div class="feature-tags">
+									<span class="feature-tag"
+										>Flexible</span
+									>
+									<span class="feature-tag"
+										>Diverse</span
+									>
+								</div>
+							</div>
+						</div>
+					</article>
 
-          <!-- Feature 6 -->
-          <div class="feature-item">
-            <div class="feature-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-                <circle cx="32" cy="32" r="30" fill="rgba(45, 125, 94, 0.1)" />
-                <g transform="translate(32, 32)">
-                  <circle
-                    cx="0"
-                    cy="0"
-                    r="8"
-                    fill="none"
-                    stroke="#2d7d5e"
-                    stroke-width="2"
-                  />
-                  <path
-                    d="M 0 -8 L 0 8 M -8 0 L 8 0"
-                    stroke="#2d7d5e"
-                    stroke-width="1.5"
-                    opacity="0.4"
-                  />
-                  <circle cx="0" cy="0" r="2" fill="#2d7d5e" />
-                </g>
-              </svg>
-            </div>
-            <h3>Transparent Fee Structure</h3>
-            <p>
-              No hidden costs. Simple, competitive fees that support our mission
-              without compromising your returns.
-            </p>
-            <div class="feature-meta">
-              <span class="feature-badge">Zero Hidden Fees</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+					<!-- Feature Card 4 -->
+					<article class="feature-card">
+						<div class="feature-card-inner">
+							<div class="feature-icon-wrapper">
+								<div class="feature-icon">
+									<svg
+										width="28"
+										height="28"
+										viewBox="0 0 28 28"
+										fill="none"
+									>
+										<rect
+											x="4"
+											y="8"
+											width="20"
+											height="16"
+											rx="2"
+											stroke="currentColor"
+											stroke-width="2"
+										/>
+										<path
+											d="M8 8V6C8 4.89543 8.89543 4 10 4H18C19.1046 4 20 4.89543 20 6V8"
+											stroke="currentColor"
+											stroke-width="2"
+											stroke-linecap="round"
+										/>
+										<circle
+											cx="14"
+											cy="16"
+											r="2"
+											fill="currentColor"
+										/>
+									</svg>
+								</div>
+							</div>
+							<div class="feature-content">
+								<h3 class="feature-title">
+									Bank-Level Security
+								</h3>
+								<p class="feature-text">
+									Your data and investments are
+									protected with military-grade
+									encryption and multi-factor
+									authentication at every level.
+								</p>
+								<div class="feature-tags">
+									<span class="feature-tag"
+										>Secure</span
+									>
+									<span class="feature-tag"
+										>Protected</span
+									>
+								</div>
+							</div>
+						</div>
+					</article>
 
-    <!-- How It Works Section -->
-    <section class="how-it-works" id="how-it-works">
-      <div class="container">
-        <div class="how-it-works-header">
-          <h2>How It Works</h2>
-          <p class="section-subtitle">
-            Get started in just three simple steps. From sign-up to impact in
-            minutes.
-          </p>
-        </div>
+					<!-- Feature Card 5 -->
+					<article class="feature-card">
+						<div class="feature-card-inner">
+							<div class="feature-icon-wrapper">
+								<div class="feature-icon">
+									<svg
+										width="28"
+										height="28"
+										viewBox="0 0 28 28"
+										fill="none"
+									>
+										<path
+											d="M14 4V14M14 14L20 20M14 14L8 20"
+											stroke="currentColor"
+											stroke-width="2"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										/>
+										<path
+											d="M4 18V22C4 23.1046 4.89543 24 6 24H22C23.1046 24 24 23.1046 24 22V18"
+											stroke="currentColor"
+											stroke-width="2"
+											stroke-linecap="round"
+										/>
+									</svg>
+								</div>
+							</div>
+							<div class="feature-content">
+								<h3 class="feature-title">
+									Expert Insights
+								</h3>
+								<p class="feature-text">
+									Access curated market analysis,
+									sustainability reports, and
+									educational content from
+									industry-leading ESG experts.
+								</p>
+								<div class="feature-tags">
+									<span class="feature-tag"
+										>Premium</span
+									>
+									<span class="feature-tag"
+										>Educational</span
+									>
+								</div>
+							</div>
+						</div>
+					</article>
 
-        <div class="steps-container">
-          <!-- Step 1 -->
-          <div class="step">
-            <div class="step-indicator">
-              <div class="step-number">1</div>
-              <div class="step-line"></div>
-            </div>
-            <div class="step-content">
-              <div class="step-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-                  <circle
-                    cx="32"
-                    cy="32"
-                    r="30"
-                    fill="rgba(45, 125, 94, 0.1)"
-                  />
-                  <g transform="translate(32, 32)">
-                    <rect
-                      x="-8"
-                      y="-10"
-                      width="16"
-                      height="20"
-                      rx="2"
-                      fill="none"
-                      stroke="#2d7d5e"
-                      stroke-width="2"
-                    />
-                    <circle cx="0" cy="0" r="3" fill="#2d7d5e" />
-                    <path
-                      d="M -6 -6 L 6 -6 M -6 8 L 6 8"
-                      stroke="#2d7d5e"
-                      stroke-width="1.5"
-                      opacity="0.4"
-                    />
-                  </g>
-                </svg>
-              </div>
-              <h3>Sign Up & Tell Us Your Values</h3>
-              <p>
-                Create your Eco-Vest account and complete a quick values
-                assessment. Help us understand what causes matter most to you.
-              </p>
-            </div>
-          </div>
+					<!-- Feature Card 6 -->
+					<article class="feature-card">
+						<div class="feature-card-inner">
+							<div class="feature-icon-wrapper">
+								<div class="feature-icon">
+									<svg
+										width="28"
+										height="28"
+										viewBox="0 0 28 28"
+										fill="none"
+									>
+										<circle
+											cx="9"
+											cy="9"
+											r="3"
+											stroke="currentColor"
+											stroke-width="2"
+										/>
+										<circle
+											cx="19"
+											cy="9"
+											r="3"
+											stroke="currentColor"
+											stroke-width="2"
+										/>
+										<circle
+											cx="14"
+											cy="19"
+											r="3"
+											stroke="currentColor"
+											stroke-width="2"
+										/>
+										<path
+											d="M11.5 11L16.5 17M11.5 17L16.5 11"
+											stroke="currentColor"
+											stroke-width="2"
+											stroke-linecap="round"
+										/>
+									</svg>
+								</div>
+							</div>
+							<div class="feature-content">
+								<h3 class="feature-title">
+									Community Driven
+								</h3>
+								<p class="feature-text">
+									Join a thriving community of
+									conscious investors. Share
+									insights, strategies, and
+									celebrate collective impact
+									together.
+								</p>
+								<div class="feature-tags">
+									<span class="feature-tag"
+										>Social</span
+									>
+									<span class="feature-tag"
+										>Collaborative</span
+									>
+								</div>
+							</div>
+						</div>
+					</article>
+				</div>
 
-          <!-- Step 2 -->
-          <div class="step">
-            <div class="step-indicator">
-              <div class="step-number">2</div>
-              <div class="step-line"></div>
-            </div>
-            <div class="step-content">
-              <div class="step-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-                  <circle
-                    cx="32"
-                    cy="32"
-                    r="30"
-                    fill="rgba(45, 125, 94, 0.1)"
-                  />
-                  <g transform="translate(32, 32)">
-                    <rect
-                      x="-8"
-                      y="-6"
-                      width="16"
-                      height="12"
-                      rx="1"
-                      fill="none"
-                      stroke="#2d7d5e"
-                      stroke-width="2"
-                    />
-                    <path
-                      d="M -4 -6 L -4 0 M 0 -6 L 0 6 M 4 -6 L 4 0"
-                      stroke="#2d7d5e"
-                      stroke-width="1.5"
-                      opacity="0.4"
-                    />
-                    <circle cx="0" cy="0" r="2" fill="#2d7d5e" />
-                  </g>
-                </svg>
-              </div>
-              <h3>Connect & Fund Your Account</h3>
-              <p>
-                Link your bank account securely. Set up automatic transfers to
-                begin your sustainable investment journey.
-              </p>
-            </div>
-          </div>
+				<!-- Decorative Elements -->
+				<div class="features-decoration">
+					<div
+						class="decoration-circle decoration-circle-1"
+					></div>
+					<div
+						class="decoration-circle decoration-circle-2"
+					></div>
+					<div
+						class="decoration-circle decoration-circle-3"
+					></div>
+				</div>
+			</div>
+		</section>
 
-          <!-- Step 3 -->
-          <div class="step">
-            <div class="step-indicator">
-              <div class="step-number">3</div>
-              <div class="step-line"></div>
-            </div>
-            <div class="step-content">
-              <div class="step-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-                  <circle
-                    cx="32"
-                    cy="32"
-                    r="30"
-                    fill="rgba(45, 125, 94, 0.1)"
-                  />
-                  <g transform="translate(32, 32)">
-                    <polyline
-                      points="-6,6 0,-6 6,4"
-                      fill="none"
-                      stroke="#2d7d5e"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <circle cx="-6" cy="6" r="2" fill="#2d7d5e" opacity="0.6" />
-                    <circle cx="0" cy="-6" r="2" fill="#2d7d5e" />
-                    <circle cx="6" cy="4" r="2" fill="#2d7d5e" opacity="0.6" />
-                  </g>
-                </svg>
-              </div>
-              <h3>Watch Your Impact Grow</h3>
-              <p>
-                Our AI automatically invests in sustainable opportunities. Track
-                your wealth and environmental impact in real-time.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+		<!-- How It Works Section -->
+		<section
+			class="how-it-works"
+			id="how-it-works"
+		>
+			<div class="hiw-container">
+				<!-- Section Header -->
+				<div class="hiw-header">
+					<span class="hiw-label"
+						>How It Works</span
+					>
+					<h2 class="hiw-title">
+						Start Investing in
+						<span class="gradient-text"
+							>3 Simple Steps</span
+						>
+					</h2>
+					<p class="hiw-description">
+						From sign-up to impact in minutes.
+						Join thousands who are building wealth
+						while creating positive change.
+					</p>
+				</div>
 
-    <!-- Impact Section -->
-    <section class="impact" id="impact">
-      <div class="container">
-        <div class="impact-header">
-          <h2>Our Community's Impact</h2>
-          <p class="section-subtitle">
-            Real, measurable results from conscious investing. Together, we're
-            making a difference.
-          </p>
-        </div>
+				<!-- Steps Grid -->
+				<div class="hiw-steps">
+					<!-- Step 1 -->
+					<article class="hiw-step">
+						<div class="hiw-step-number">
+							<span>01</span>
+						</div>
+						<div class="hiw-step-icon">
+							<svg
+								width="32"
+								height="32"
+								viewBox="0 0 32 32"
+								fill="none"
+							>
+								<circle
+									cx="16"
+									cy="10"
+									r="6"
+									stroke="currentColor"
+									stroke-width="2"
+								/>
+								<path
+									d="M6 28C6 22 10 18 16 18C22 18 26 22 26 28"
+									stroke="currentColor"
+									stroke-width="2"
+									stroke-linecap="round"
+								/>
+							</svg>
+						</div>
+						<div class="hiw-step-content">
+							<h3 class="hiw-step-title">
+								Create Your Profile
+							</h3>
+							<p class="hiw-step-text">
+								Sign up and complete a quick
+								values assessment. Tell us what
+								matters most to you—climate
+								action, social justice, clean
+								energy, and more.
+							</p>
+							<div class="hiw-step-time">
+								<svg
+									width="16"
+									height="16"
+									viewBox="0 0 16 16"
+									fill="none"
+								>
+									<circle
+										cx="8"
+										cy="8"
+										r="7"
+										stroke="currentColor"
+										stroke-width="1.5"
+									/>
+									<path
+										d="M8 4V8L11 10"
+										stroke="currentColor"
+										stroke-width="1.5"
+										stroke-linecap="round"
+									/>
+								</svg>
+								<span>2 minutes</span>
+							</div>
+						</div>
+						<div class="hiw-step-connector"></div>
+					</article>
 
-        <div class="impact-grid">
-          <!-- Environmental Impact -->
-          <div class="impact-card">
-            <div class="impact-card-header">
-              <div class="impact-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-                  <g transform="translate(32, 32)">
-                    <!-- Leaf icon -->
-                    <path
-                      d="M 0 -10 Q 8 -6 8 2 Q 8 10 0 12 Q -8 10 -8 2 Q -8 -6 0 -10 Z M -2 -2 L 2 8"
-                      stroke="white"
-                      stroke-width="1.5"
-                      fill="white"
-                      stroke-linecap="round"
-                    />
-                  </g>
-                </svg>
-              </div>
-              <h3>Environmental</h3>
-            </div>
-            <ul class="impact-list">
-              <li>
-                <span class="impact-stat">100K+</span>
-                <span class="impact-label">Trees Protected</span>
-              </li>
-              <li>
-                <span class="impact-stat">500K</span>
-                <span class="impact-label">Tons CO₂ Offset</span>
-              </li>
-              <li>
-                <span class="impact-stat">10M+</span>
-                <span class="impact-label">Gallons Water Saved</span>
-              </li>
-            </ul>
-          </div>
+					<!-- Step 2 -->
+					<article class="hiw-step">
+						<div class="hiw-step-number">
+							<span>02</span>
+						</div>
+						<div class="hiw-step-icon">
+							<svg
+								width="32"
+								height="32"
+								viewBox="0 0 32 32"
+								fill="none"
+							>
+								<rect
+									x="6"
+									y="8"
+									width="20"
+									height="18"
+									rx="2"
+									stroke="currentColor"
+									stroke-width="2"
+								/>
+								<path
+									d="M11 14H21M11 18H17"
+									stroke="currentColor"
+									stroke-width="2"
+									stroke-linecap="round"
+								/>
+								<path
+									d="M12 8V6C12 5.44772 12.4477 5 13 5H19C19.5523 5 20 5.44772 20 6V8"
+									stroke="currentColor"
+									stroke-width="2"
+								/>
+							</svg>
+						</div>
+						<div class="hiw-step-content">
+							<h3 class="hiw-step-title">
+								Choose Your Portfolio
+							</h3>
+							<p class="hiw-step-text">
+								Select from expertly curated ESG
+								portfolios or build your own.
+								Connect your bank account securely
+								to fund your investments.
+							</p>
+							<div class="hiw-step-time">
+								<svg
+									width="16"
+									height="16"
+									viewBox="0 0 16 16"
+									fill="none"
+								>
+									<circle
+										cx="8"
+										cy="8"
+										r="7"
+										stroke="currentColor"
+										stroke-width="1.5"
+									/>
+									<path
+										d="M8 4V8L11 10"
+										stroke="currentColor"
+										stroke-width="1.5"
+										stroke-linecap="round"
+									/>
+								</svg>
+								<span>3 minutes</span>
+							</div>
+						</div>
+						<div class="hiw-step-connector"></div>
+					</article>
 
-          <!-- Social Impact -->
-          <div class="impact-card">
-            <div class="impact-card-header">
-              <div class="impact-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-                  <g transform="translate(32, 32)">
-                    <!-- People/Community icon -->
-                    <circle cx="-5" cy="-6" r="3.5" fill="white" />
-                    <circle cx="5" cy="-6" r="3.5" fill="white" />
-                    <path
-                      d="M -8 -2 L -2 -2 L -2 4 L -8 4 Z"
-                      fill="white"
-                      opacity="0.8"
-                    />
-                    <path
-                      d="M 2 -2 L 8 -2 L 8 4 L 2 4 Z"
-                      fill="white"
-                      opacity="0.8"
-                    />
-                    <path d="M -2 2 L 2 2 L 2 8 L -2 8 Z" fill="white" />
-                  </g>
-                </svg>
-              </div>
-              <h3>Social</h3>
-            </div>
-            <ul class="impact-list">
-              <li>
-                <span class="impact-stat">5K+</span>
-                <span class="impact-label">Communities Supported</span>
-              </li>
-              <li>
-                <span class="impact-stat">15K+</span>
-                <span class="impact-label">Jobs Created</span>
-              </li>
-              <li>
-                <span class="impact-stat">25K+</span>
-                <span class="impact-label">Students Educated</span>
-              </li>
-            </ul>
-          </div>
+					<!-- Step 3 -->
+					<article class="hiw-step">
+						<div class="hiw-step-number">
+							<span>03</span>
+						</div>
+						<div class="hiw-step-icon">
+							<svg
+								width="32"
+								height="32"
+								viewBox="0 0 32 32"
+								fill="none"
+							>
+								<path
+									d="M4 16L8 12M8 12L12 16M8 12V24"
+									stroke="currentColor"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								/>
+								<path
+									d="M16 10V4M16 4L20 8M16 4L12 8"
+									stroke="currentColor"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								/>
+								<path
+									d="M24 16L28 20M28 20L24 24M28 20H16"
+									stroke="currentColor"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								/>
+							</svg>
+						</div>
+						<div class="hiw-step-content">
+							<h3 class="hiw-step-title">
+								Track Your Impact
+							</h3>
+							<p class="hiw-step-text">
+								Watch your wealth grow alongside
+								your positive impact. Real-time
+								dashboards show your returns and
+								environmental contributions.
+							</p>
+							<div class="hiw-step-time">
+								<svg
+									width="16"
+									height="16"
+									viewBox="0 0 16 16"
+									fill="none"
+								>
+									<path
+										d="M8 2V8L12 10"
+										stroke="currentColor"
+										stroke-width="1.5"
+										stroke-linecap="round"
+									/>
+									<circle
+										cx="8"
+										cy="8"
+										r="6.5"
+										stroke="currentColor"
+										stroke-width="1.5"
+									/>
+								</svg>
+								<span>Ongoing</span>
+							</div>
+						</div>
+					</article>
+				</div>
 
-          <!-- Financial Impact -->
-          <div class="impact-card">
-            <div class="impact-card-header">
-              <div class="impact-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-                  <g transform="translate(32, 32)">
-                    <!-- Growth/Upward trend icon -->
-                    <path
-                      d="M -8 6 L -4 2 L 0 4 L 4 -2 L 8 0"
-                      stroke="white"
-                      stroke-width="2"
-                      fill="none"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M 4 -2 L 6 -2 L 6 0"
-                      stroke="white"
-                      stroke-width="2"
-                      fill="none"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </g>
-                </svg>
-              </div>
-              <h3>Financial</h3>
-            </div>
-            <ul class="impact-list">
-              <li>
-                <span class="impact-stat">8.5%</span>
-                <span class="impact-label">Average Annual Return</span>
-              </li>
-              <li>
-                <span class="impact-stat">$2.5M</span>
-                <span class="impact-label">Invested Sustainably</span>
-              </li>
-              <li>
-                <span class="impact-stat">0%</span>
-                <span class="impact-label">Compromise on Growth</span>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
+				<!-- CTA Button -->
+				<div class="hiw-cta">
+					<button class="btn-primary">
+						Get Started Now
+					</button>
+					<p class="hiw-cta-note">
+						No credit card required • Free to sign
+						up
+					</p>
+				</div>
 
-    <!-- Testimonials Section -->
-    <section class="testimonials" id="testimonials">
-      <div class="container">
-        <div class="testimonials-header">
-          <h2>What Our Community Says</h2>
-          <p class="section-subtitle">
-            Real experiences from conscious investors making a difference.
-          </p>
-        </div>
+				<!-- Decorative Background -->
+				<div class="hiw-decoration">
+					<div
+						class="hiw-decoration-circle hiw-decoration-circle-1"
+					></div>
+					<div
+						class="hiw-decoration-circle hiw-decoration-circle-2"
+					></div>
+				</div>
+			</div>
+		</section>
 
-        <div class="testimonials-grid">
-          <!-- Testimonial 1 -->
-          <div class="testimonial-card">
-            <div class="testimonial-rating">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="#7ac8a0"
-              >
-                <polygon
-                  points="12 2 15.09 10.26 24 10.26 17.55 15.74 19.64 24 12 19.52 4.36 24 6.45 15.74 0 10.26 8.91 10.26"
-                />
-              </svg>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="#7ac8a0"
-              >
-                <polygon
-                  points="12 2 15.09 10.26 24 10.26 17.55 15.74 19.64 24 12 19.52 4.36 24 6.45 15.74 0 10.26 8.91 10.26"
-                />
-              </svg>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="#7ac8a0"
-              >
-                <polygon
-                  points="12 2 15.09 10.26 24 10.26 17.55 15.74 19.64 24 12 19.52 4.36 24 6.45 15.74 0 10.26 8.91 10.26"
-                />
-              </svg>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="#7ac8a0"
-              >
-                <polygon
-                  points="12 2 15.09 10.26 24 10.26 17.55 15.74 19.64 24 12 19.52 4.36 24 6.45 15.74 0 10.26 8.91 10.26"
-                />
-              </svg>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="#7ac8a0"
-              >
-                <polygon
-                  points="12 2 15.09 10.26 24 10.26 17.55 15.74 19.64 24 12 19.52 4.36 24 6.45 15.74 0 10.26 8.91 10.26"
-                />
-              </svg>
-            </div>
-            <p class="testimonial-text">
-              "Eco-Vest helped me align my investments with my values. I'm
-              growing my wealth AND making a real difference. It's a win-win!"
-            </p>
-            <div class="testimonial-author">
-              <strong>Sarah Chen</strong>
-              <span>Environmental Advocate, 28</span>
-            </div>
-          </div>
+		<!-- Impact Section -->
+		<section
+			class="impact"
+			id="impact"
+		>
+			<div class="impact-container">
+				<!-- Section Header -->
+				<div class="impact-header">
+					<span class="impact-label"
+						>Real Impact</span
+					>
+					<h2 class="impact-title">
+						Together, We're Creating
+						<span class="impact-highlight"
+							>Lasting Change</span
+						>
+					</h2>
+					<p class="impact-description">
+						Measurable results from conscious
+						investing. See the real-world
+						difference our community is making
+						every single day.
+					</p>
+				</div>
 
-          <!-- Testimonial 2 -->
-          <div class="testimonial-card">
-            <div class="testimonial-rating">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="#7ac8a0"
-              >
-                <polygon
-                  points="12 2 15.09 10.26 24 10.26 17.55 15.74 19.64 24 12 19.52 4.36 24 6.45 15.74 0 10.26 8.91 10.26"
-                />
-              </svg>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="#7ac8a0"
-              >
-                <polygon
-                  points="12 2 15.09 10.26 24 10.26 17.55 15.74 19.64 24 12 19.52 4.36 24 6.45 15.74 0 10.26 8.91 10.26"
-                />
-              </svg>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="#7ac8a0"
-              >
-                <polygon
-                  points="12 2 15.09 10.26 24 10.26 17.55 15.74 19.64 24 12 19.52 4.36 24 6.45 15.74 0 10.26 8.91 10.26"
-                />
-              </svg>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="#7ac8a0"
-              >
-                <polygon
-                  points="12 2 15.09 10.26 24 10.26 17.55 15.74 19.64 24 12 19.52 4.36 24 6.45 15.74 0 10.26 8.91 10.26"
-                />
-              </svg>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="#7ac8a0"
-              >
-                <polygon
-                  points="12 2 15.09 10.26 24 10.26 17.55 15.74 19.64 24 12 19.52 4.36 24 6.45 15.74 0 10.26 8.91 10.26"
-                />
-              </svg>
-            </div>
-            <p class="testimonial-text">
-              "The transparency is incredible. I can see exactly which companies
-              I'm supporting and what impact I'm creating. Finally, finance with
-              a conscience."
-            </p>
-            <div class="testimonial-author">
-              <strong>Marcus Rodriguez</strong>
-              <span>Sustainability Manager, 32</span>
-            </div>
-          </div>
+				<!-- Impact Stats Grid -->
+				<div class="impact-stats-grid">
+					<!-- Stat 1 -->
+					<article class="impact-stat-card">
+						<div class="impact-stat-icon">
+							<svg
+								width="32"
+								height="32"
+								viewBox="0 0 32 32"
+								fill="none"
+							>
+								<path
+									d="M16 4C16 4 12 8 12 12C12 14.2091 13.7909 16 16 16C18.2091 16 20 14.2091 20 12C20 8 16 4 16 4Z"
+									stroke="currentColor"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								/>
+								<path
+									d="M8 28C8 28 4 24 4 20C4 17.7909 5.79086 16 8 16C10.2091 16 12 17.7909 12 20C12 24 8 28 8 28Z"
+									stroke="currentColor"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								/>
+								<path
+									d="M24 28C24 28 20 24 20 20C20 17.7909 21.7909 16 24 16C26.2091 16 28 17.7909 28 20C28 24 24 28 24 28Z"
+									stroke="currentColor"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								/>
+							</svg>
+						</div>
+						<div class="impact-stat-content">
+							<div class="impact-stat-number">
+								2.5M
+							</div>
+							<div class="impact-stat-label">
+								Tons CO₂ Offset
+							</div>
+							<div class="impact-stat-context">
+								Equivalent to planting 41M trees
+							</div>
+						</div>
+					</article>
 
-          <!-- Testimonial 3 -->
-          <div class="testimonial-card">
-            <div class="testimonial-rating">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="#7ac8a0"
-              >
-                <polygon
-                  points="12 2 15.09 10.26 24 10.26 17.55 15.74 19.64 24 12 19.52 4.36 24 6.45 15.74 0 10.26 8.91 10.26"
-                />
-              </svg>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="#7ac8a0"
-              >
-                <polygon
-                  points="12 2 15.09 10.26 24 10.26 17.55 15.74 19.64 24 12 19.52 4.36 24 6.45 15.74 0 10.26 8.91 10.26"
-                />
-              </svg>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="#7ac8a0"
-              >
-                <polygon
-                  points="12 2 15.09 10.26 24 10.26 17.55 15.74 19.64 24 12 19.52 4.36 24 6.45 15.74 0 10.26 8.91 10.26"
-                />
-              </svg>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="#7ac8a0"
-              >
-                <polygon
-                  points="12 2 15.09 10.26 24 10.26 17.55 15.74 19.64 24 12 19.52 4.36 24 6.45 15.74 0 10.26 8.91 10.26"
-                />
-              </svg>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="#7ac8a0"
-              >
-                <polygon
-                  points="12 2 15.09 10.26 24 10.26 17.55 15.74 19.64 24 12 19.52 4.36 24 6.45 15.74 0 10.26 8.91 10.26"
-                />
-              </svg>
-            </div>
-            <p class="testimonial-text">
-              "As a millennial, I wanted my money to reflect my values.
-              Eco-Vest's AI automation saved me hours of research while
-              delivering solid returns."
-            </p>
-            <div class="testimonial-author">
-              <strong>Jordan Kim</strong>
-              <span>Tech Professional, 26</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+					<!-- Stat 2 -->
+					<article class="impact-stat-card">
+						<div class="impact-stat-icon">
+							<svg
+								width="32"
+								height="32"
+								viewBox="0 0 32 32"
+								fill="none"
+							>
+								<circle
+									cx="16"
+									cy="10"
+									r="4"
+									stroke="currentColor"
+									stroke-width="2"
+								/>
+								<circle
+									cx="8"
+									cy="22"
+									r="3"
+									stroke="currentColor"
+									stroke-width="2"
+								/>
+								<circle
+									cx="24"
+									cy="22"
+									r="3"
+									stroke="currentColor"
+									stroke-width="2"
+								/>
+								<path
+									d="M16 14V18M16 18L8 19M16 18L24 19"
+									stroke="currentColor"
+									stroke-width="2"
+									stroke-linecap="round"
+								/>
+							</svg>
+						</div>
+						<div class="impact-stat-content">
+							<div class="impact-stat-number">
+								50K+
+							</div>
+							<div class="impact-stat-label">
+								People Employed
+							</div>
+							<div class="impact-stat-context">
+								Through sustainable businesses
+							</div>
+						</div>
+					</article>
 
-    <!-- CTA Section -->
-    <section class="cta-section" id="contact">
-      <div class="container">
-        <div class="cta-wrapper">
-          <div class="cta-content">
-            <h2>Ready to Invest with Impact?</h2>
-            <p class="cta-subtitle">
-              Join 50,000+ conscious investors building a better future—one
-              sustainable investment at a time.
-            </p>
+					<!-- Stat 3 -->
+					<article class="impact-stat-card">
+						<div class="impact-stat-icon">
+							<svg
+								width="32"
+								height="32"
+								viewBox="0 0 32 32"
+								fill="none"
+							>
+								<path
+									d="M6 26H26M6 26V12M6 26V6M26 26V16M26 26V6"
+									stroke="currentColor"
+									stroke-width="2"
+									stroke-linecap="round"
+								/>
+								<path
+									d="M10 22V18M16 22V14M22 22V10"
+									stroke="currentColor"
+									stroke-width="2"
+									stroke-linecap="round"
+								/>
+							</svg>
+						</div>
+						<div class="impact-stat-content">
+							<div class="impact-stat-number">
+								$850M
+							</div>
+							<div class="impact-stat-label">
+								Invested Sustainably
+							</div>
+							<div class="impact-stat-context">
+								Across 1,200+ companies
+							</div>
+						</div>
+					</article>
 
-            <form class="cta-form" id="signupForm">
-              <input
-                type="email"
-                placeholder="Enter your email"
-                required
-                aria-label="Email address"
-                class="cta-input"
-              />
-              <button type="submit" class="btn btn-cta">
-                Start Building Impact
-              </button>
-            </form>
+					<!-- Stat 4 -->
+					<article class="impact-stat-card">
+						<div class="impact-stat-icon">
+							<svg
+								width="32"
+								height="32"
+								viewBox="0 0 32 32"
+								fill="none"
+							>
+								<circle
+									cx="16"
+									cy="16"
+									r="10"
+									stroke="currentColor"
+									stroke-width="2"
+								/>
+								<path
+									d="M16 6V16L22 19"
+									stroke="currentColor"
+									stroke-width="2"
+									stroke-linecap="round"
+								/>
+								<path
+									d="M6 16H2M30 16H26M16 2V6M16 26V30"
+									stroke="currentColor"
+									stroke-width="2"
+									stroke-linecap="round"
+								/>
+							</svg>
+						</div>
+						<div class="impact-stat-content">
+							<div class="impact-stat-number">
+								8.7%
+							</div>
+							<div class="impact-stat-label">
+								Average Return
+							</div>
+							<div class="impact-stat-context">
+								Beating market average
+							</div>
+						</div>
+					</article>
+				</div>
 
-            <p class="cta-disclaimer">
-              No credit card required. Free access to the app and our
-              educational resources.
-            </p>
-          </div>
+				<!-- Impact Categories -->
+				<div class="impact-categories">
+					<div class="impact-category">
+						<div class="impact-category-icon">
+							<svg
+								width="24"
+								height="24"
+								viewBox="0 0 24 24"
+								fill="none"
+							>
+								<path
+									d="M12 2L14 8L20 10L14 12L12 18L10 12L4 10L10 8L12 2Z"
+									stroke="currentColor"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								/>
+							</svg>
+						</div>
+						<div class="impact-category-name">
+							Clean Energy
+						</div>
+					</div>
+					<div class="impact-category">
+						<div class="impact-category-icon">
+							<svg
+								width="24"
+								height="24"
+								viewBox="0 0 24 24"
+								fill="none"
+							>
+								<path
+									d="M20 7H4M20 7V19C20 19.5523 19.5523 20 19 20H5C4.44772 20 4 19.5523 4 19V7M20 7L18 4H6L4 7"
+									stroke="currentColor"
+									stroke-width="2"
+									stroke-linecap="round"
+								/>
+							</svg>
+						</div>
+						<div class="impact-category-name">
+							Waste Reduction
+						</div>
+					</div>
+					<div class="impact-category">
+						<div class="impact-category-icon">
+							<svg
+								width="24"
+								height="24"
+								viewBox="0 0 24 24"
+								fill="none"
+							>
+								<circle
+									cx="12"
+									cy="12"
+									r="8"
+									stroke="currentColor"
+									stroke-width="2"
+								/>
+								<path
+									d="M12 8V12L15 14"
+									stroke="currentColor"
+									stroke-width="2"
+									stroke-linecap="round"
+								/>
+							</svg>
+						</div>
+						<div class="impact-category-name">
+							Fair Labor
+						</div>
+					</div>
+					<div class="impact-category">
+						<div class="impact-category-icon">
+							<svg
+								width="24"
+								height="24"
+								viewBox="0 0 24 24"
+								fill="none"
+							>
+								<path
+									d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z"
+									stroke="currentColor"
+									stroke-width="2"
+								/>
+								<path
+									d="M12 3C14.5 3 16.5 7 16.5 12C16.5 17 14.5 21 12 21"
+									stroke="currentColor"
+									stroke-width="2"
+								/>
+								<path
+									d="M12 3C9.5 3 7.5 7 7.5 12C7.5 17 9.5 21 12 21"
+									stroke="currentColor"
+									stroke-width="2"
+								/>
+								<path
+									d="M3 12H21"
+									stroke="currentColor"
+									stroke-width="2"
+								/>
+							</svg>
+						</div>
+						<div class="impact-category-name">
+							Global Equality
+						</div>
+					</div>
+					<div class="impact-category">
+						<div class="impact-category-icon">
+							<svg
+								width="24"
+								height="24"
+								viewBox="0 0 24 24"
+								fill="none"
+							>
+								<rect
+									x="4"
+									y="4"
+									width="16"
+									height="16"
+									rx="2"
+									stroke="currentColor"
+									stroke-width="2"
+								/>
+								<path
+									d="M8 2V6M16 2V6M4 10H20"
+									stroke="currentColor"
+									stroke-width="2"
+									stroke-linecap="round"
+								/>
+							</svg>
+						</div>
+						<div class="impact-category-name">
+							Education
+						</div>
+					</div>
+				</div>
 
-          <!-- Decorative features -->
-          <div class="cta-features">
-            <div class="cta-feature">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                <path
-                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
-                  fill="white"
-                />
-              </svg>
-              <span>AI-Powered Matching</span>
-            </div>
-            <div class="cta-feature">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                <path
-                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
-                  fill="white"
-                />
-              </svg>
-              <span>Real-Time Impact Tracking</span>
-            </div>
-            <div class="cta-feature">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                <path
-                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
-                  fill="white"
-                />
-              </svg>
-              <span>Expert Support</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+				<!-- Background Decoration -->
+				<div class="impact-decoration">
+					<div
+						class="impact-decoration-circle impact-decoration-circle-1"
+					></div>
+					<div
+						class="impact-decoration-circle impact-decoration-circle-2"
+					></div>
+				</div>
+			</div>
+		</section>
 
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="container">
-        <!-- Footer Top -->
-        <div class="footer-top">
-          <div class="footer-section footer-brand">
-            <h3 class="footer-logo">Eco-Vest</h3>
-            <p>
-              Empowering the next generation of conscious investors to grow
-              their wealth while making a positive environmental and social
-              impact.
-            </p>
-            <div class="footer-socials">
-              <a href="#" aria-label="Instagram" title="Instagram">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                >
-                  <path
-                    d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4c0 3.2-2.6 5.8-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8C2 4.6 4.6 2 7.8 2m-.3 2C5.4 4 4 5.4 4 7.5v9c0 2.1 1.4 3.5 3.5 3.5h9c2.1 0 3.5-1.4 3.5-3.5v-9c0-2.1-1.4-3.5-3.5-3.5h-9m11.1 1.5a1.5 1.5 0 0 1 1.5 1.5 1.5 1.5 0 0 1-1.5 1.5 1.5 1.5 0 0 1-1.5-1.5 1.5 1.5 0 0 1 1.5-1.5m-5.8 1.5a3.5 3.5 0 0 1 3.5 3.5 3.5 3.5 0 0 1-3.5 3.5 3.5 3.5 0 0 1-3.5-3.5 3.5 3.5 0 0 1 3.5-3.5m0 2a1.5 1.5 0 0 0-1.5 1.5 1.5 1.5 0 0 0 1.5 1.5 1.5 1.5 0 0 0 1.5-1.5 1.5 1.5 0 0 0-1.5-1.5z"
-                  />
-                </svg>
-              </a>
-              <a href="#" aria-label="Twitter" title="Twitter">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                >
-                  <path
-                    d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2s9 5 20 5a9.5 9.5 0 00-9-5.5c4.75 2.25 9-1 9-1z"
-                  />
-                </svg>
-              </a>
-              <a href="#" aria-label="LinkedIn" title="LinkedIn">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                >
-                  <path
-                    d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.39v-1.2h-2.5v8.5h2.5v-4.34c0-.77.62-1.4 1.4-1.4.77 0 1.4.63 1.4 1.4v4.34h2.5M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69-.93 0-1.69.76-1.69 1.69 0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.5H5.5v8.5h2.77z"
-                  />
-                </svg>
-              </a>
-            </div>
-          </div>
+		<!-- Testimonials Section -->
+		<section
+			class="testimonials"
+			id="testimonials"
+		>
+			<div class="testimonials-container">
+				<!-- Section Header -->
+				<div class="testimonials-header">
+					<span class="testimonials-label"
+						>Testimonials</span
+					>
+					<h2 class="testimonials-title">
+						Trusted by
+						<span class="gradient-text"
+							>Conscious Investors</span
+						>
+						Worldwide
+					</h2>
+					<p class="testimonials-description">
+						Discover how thousands of investors
+						are building wealth while making a
+						positive impact on the planet.
+					</p>
+				</div>
 
-          <div class="footer-section">
-            <h4>Quick Links</h4>
-            <ul>
-              <li><a href="#features">Features</a></li>
-              <li><a href="#how-it-works">How It Works</a></li>
-              <li><a href="#impact">Our Impact</a></li>
-              <li><a href="#testimonials">Testimonials</a></li>
-            </ul>
-          </div>
+				<!-- Testimonials Grid -->
+				<div class="testimonials-grid">
+					<!-- Testimonial 1 -->
+					<article class="testimonial-card">
+						<div class="testimonial-quote">
+							<svg
+								width="32"
+								height="32"
+								viewBox="0 0 32 32"
+								fill="none"
+							>
+								<path
+									d="M10 14C10 9.58172 13.5817 6 18 6V8C14.6863 8 12 10.6863 12 14V15H16V24H8V15V14H10Z"
+									fill="currentColor"
+									opacity="0.2"
+								/>
+								<path
+									d="M24 14C24 9.58172 27.5817 6 32 6V8C28.6863 8 26 10.6863 26 14V15H30V24H22V15V14H24Z"
+									fill="currentColor"
+									opacity="0.2"
+								/>
+							</svg>
+						</div>
+						<p class="testimonial-text">
+							"Eco-Vest transformed how I think
+							about investing. Not only am I
+							seeing great returns, but I'm also
+							making a real difference in clean
+							energy and sustainable businesses.
+							It's incredibly fulfilling."
+						</p>
+						<div class="testimonial-footer">
+							<div class="testimonial-avatar">
+								<div class="avatar-circle">
+									SC
+								</div>
+							</div>
+							<div class="testimonial-author">
+								<div class="author-name">
+									Sarah Chen
+								</div>
+								<div class="author-role">
+									Environmental Advocate
+								</div>
+							</div>
+							<div class="testimonial-rating">
+								<svg
+									width="16"
+									height="16"
+									viewBox="0 0 16 16"
+									fill="none"
+								>
+									<path
+										d="M8 1L10 6L15 6L11 9L13 14L8 11L3 14L5 9L1 6L6 6L8 1Z"
+										fill="currentColor"
+									/>
+								</svg>
+								<svg
+									width="16"
+									height="16"
+									viewBox="0 0 16 16"
+									fill="none"
+								>
+									<path
+										d="M8 1L10 6L15 6L11 9L13 14L8 11L3 14L5 9L1 6L6 6L8 1Z"
+										fill="currentColor"
+									/>
+								</svg>
+								<svg
+									width="16"
+									height="16"
+									viewBox="0 0 16 16"
+									fill="none"
+								>
+									<path
+										d="M8 1L10 6L15 6L11 9L13 14L8 11L3 14L5 9L1 6L6 6L8 1Z"
+										fill="currentColor"
+									/>
+								</svg>
+								<svg
+									width="16"
+									height="16"
+									viewBox="0 0 16 16"
+									fill="none"
+								>
+									<path
+										d="M8 1L10 6L15 6L11 9L13 14L8 11L3 14L5 9L1 6L6 6L8 1Z"
+										fill="currentColor"
+									/>
+								</svg>
+								<svg
+									width="16"
+									height="16"
+									viewBox="0 0 16 16"
+									fill="none"
+								>
+									<path
+										d="M8 1L10 6L15 6L11 9L13 14L8 11L3 14L5 9L1 6L6 6L8 1Z"
+										fill="currentColor"
+									/>
+								</svg>
+							</div>
+						</div>
+					</article>
 
-          <div class="footer-section">
-            <h4>Support</h4>
-            <ul>
-              <li><a href="mailto:support@eco-vest.com">Email Support</a></li>
-              <li><a href="#">Help Center</a></li>
-              <li><a href="#">Community Forum</a></li>
-              <li><a href="#">Blog</a></li>
-            </ul>
-          </div>
+					<!-- Testimonial 2 -->
+					<article class="testimonial-card">
+						<div class="testimonial-quote">
+							<svg
+								width="32"
+								height="32"
+								viewBox="0 0 32 32"
+								fill="none"
+							>
+								<path
+									d="M10 14C10 9.58172 13.5817 6 18 6V8C14.6863 8 12 10.6863 12 14V15H16V24H8V15V14H10Z"
+									fill="currentColor"
+									opacity="0.2"
+								/>
+								<path
+									d="M24 14C24 9.58172 27.5817 6 32 6V8C28.6863 8 26 10.6863 26 14V15H30V24H22V15V14H24Z"
+									fill="currentColor"
+									opacity="0.2"
+								/>
+							</svg>
+						</div>
+						<p class="testimonial-text">
+							"The transparency is what sold me. I
+							can track every investment and see
+							exactly how my portfolio contributes
+							to environmental and social causes.
+							Finally, finance with a conscience."
+						</p>
+						<div class="testimonial-footer">
+							<div class="testimonial-avatar">
+								<div class="avatar-circle">
+									MR
+								</div>
+							</div>
+							<div class="testimonial-author">
+								<div class="author-name">
+									Marcus Rodriguez
+								</div>
+								<div class="author-role">
+									Sustainability Manager
+								</div>
+							</div>
+							<div class="testimonial-rating">
+								<svg
+									width="16"
+									height="16"
+									viewBox="0 0 16 16"
+									fill="none"
+								>
+									<path
+										d="M8 1L10 6L15 6L11 9L13 14L8 11L3 14L5 9L1 6L6 6L8 1Z"
+										fill="currentColor"
+									/>
+								</svg>
+								<svg
+									width="16"
+									height="16"
+									viewBox="0 0 16 16"
+									fill="none"
+								>
+									<path
+										d="M8 1L10 6L15 6L11 9L13 14L8 11L3 14L5 9L1 6L6 6L8 1Z"
+										fill="currentColor"
+									/>
+								</svg>
+								<svg
+									width="16"
+									height="16"
+									viewBox="0 0 16 16"
+									fill="none"
+								>
+									<path
+										d="M8 1L10 6L15 6L11 9L13 14L8 11L3 14L5 9L1 6L6 6L8 1Z"
+										fill="currentColor"
+									/>
+								</svg>
+								<svg
+									width="16"
+									height="16"
+									viewBox="0 0 16 16"
+									fill="none"
+								>
+									<path
+										d="M8 1L10 6L15 6L11 9L13 14L8 11L3 14L5 9L1 6L6 6L8 1Z"
+										fill="currentColor"
+									/>
+								</svg>
+								<svg
+									width="16"
+									height="16"
+									viewBox="0 0 16 16"
+									fill="none"
+								>
+									<path
+										d="M8 1L10 6L15 6L11 9L13 14L8 11L3 14L5 9L1 6L6 6L8 1Z"
+										fill="currentColor"
+									/>
+								</svg>
+							</div>
+						</div>
+					</article>
 
-          <div class="footer-section">
-            <h4>Legal</h4>
-            <ul>
-              <li><a href="#">Privacy Policy</a></li>
-              <li><a href="#">Terms of Service</a></li>
-              <li><a href="#">Cookie Policy</a></li>
-              <li><a href="#">Disclosures</a></li>
-            </ul>
-          </div>
-        </div>
+					<!-- Testimonial 3 -->
+					<article class="testimonial-card">
+						<div class="testimonial-quote">
+							<svg
+								width="32"
+								height="32"
+								viewBox="0 0 32 32"
+								fill="none"
+							>
+								<path
+									d="M10 14C10 9.58172 13.5817 6 18 6V8C14.6863 8 12 10.6863 12 14V15H16V24H8V15V14H10Z"
+									fill="currentColor"
+									opacity="0.2"
+								/>
+								<path
+									d="M24 14C24 9.58172 27.5817 6 32 6V8C28.6863 8 26 10.6863 26 14V15H30V24H22V15V14H24Z"
+									fill="currentColor"
+									opacity="0.2"
+								/>
+							</svg>
+						</div>
+						<p class="testimonial-text">
+							"As a millennial, aligning my
+							investments with my values was
+							crucial. Eco-Vest's AI automation
+							saved me hours while delivering
+							solid returns. It's the future of
+							investing."
+						</p>
+						<div class="testimonial-footer">
+							<div class="testimonial-avatar">
+								<div class="avatar-circle">
+									JK
+								</div>
+							</div>
+							<div class="testimonial-author">
+								<div class="author-name">
+									Jordan Kim
+								</div>
+								<div class="author-role">
+									Tech Professional
+								</div>
+							</div>
+							<div class="testimonial-rating">
+								<svg
+									width="16"
+									height="16"
+									viewBox="0 0 16 16"
+									fill="none"
+								>
+									<path
+										d="M8 1L10 6L15 6L11 9L13 14L8 11L3 14L5 9L1 6L6 6L8 1Z"
+										fill="currentColor"
+									/>
+								</svg>
+								<svg
+									width="16"
+									height="16"
+									viewBox="0 0 16 16"
+									fill="none"
+								>
+									<path
+										d="M8 1L10 6L15 6L11 9L13 14L8 11L3 14L5 9L1 6L6 6L8 1Z"
+										fill="currentColor"
+									/>
+								</svg>
+								<svg
+									width="16"
+									height="16"
+									viewBox="0 0 16 16"
+									fill="none"
+								>
+									<path
+										d="M8 1L10 6L15 6L11 9L13 14L8 11L3 14L5 9L1 6L6 6L8 1Z"
+										fill="currentColor"
+									/>
+								</svg>
+								<svg
+									width="16"
+									height="16"
+									viewBox="0 0 16 16"
+									fill="none"
+								>
+									<path
+										d="M8 1L10 6L15 6L11 9L13 14L8 11L3 14L5 9L1 6L6 6L8 1Z"
+										fill="currentColor"
+									/>
+								</svg>
+								<svg
+									width="16"
+									height="16"
+									viewBox="0 0 16 16"
+									fill="none"
+								>
+									<path
+										d="M8 1L10 6L15 6L11 9L13 14L8 11L3 14L5 9L1 6L6 6L8 1Z"
+										fill="currentColor"
+									/>
+								</svg>
+							</div>
+						</div>
+					</article>
+				</div>
 
-        <!-- Footer Divider -->
-        <div class="footer-divider"></div>
+				<!-- Trust Indicators -->
+				<div class="testimonials-trust">
+					<div class="trust-stat">
+						<div class="trust-number">50K+</div>
+						<div class="trust-label">
+							Active Investors
+						</div>
+					</div>
+					<div class="trust-stat">
+						<div class="trust-number">4.9/5</div>
+						<div class="trust-label">
+							Average Rating
+						</div>
+					</div>
+					<div class="trust-stat">
+						<div class="trust-number">95%</div>
+						<div class="trust-label">
+							Satisfaction Rate
+						</div>
+					</div>
+				</div>
 
-        <!-- Footer Bottom -->
-        <div class="footer-bottom">
-          <p>
-            &copy; 2025 Eco-Vest. All rights reserved. | Made with
-            <svg
-              width="14"
-              height="14"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              style="display: inline; margin: 0 0.25rem; color: #7ac8a0"
-            >
-              <path
-                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
-              />
-            </svg>
-            by Eco-Vest
-          </p>
-        </div>
-      </div>
-    </footer>
+				<!-- Background Decoration -->
+				<div class="testimonials-decoration">
+					<div
+						class="testimonials-decoration-circle testimonials-decoration-circle-1"
+					></div>
+					<div
+						class="testimonials-decoration-circle testimonials-decoration-circle-2"
+					></div>
+				</div>
+			</div>
+		</section>
 
-    <script src="script.js"></script>
-  </body>
+		<!-- CTA Section -->
+		<section
+			class="cta-section"
+			id="contact"
+		>
+			<div class="cta-container">
+				<!-- Main Content -->
+				<div class="cta-content">
+					<span class="cta-label"
+						>Start Your Journey</span
+					>
+					<h2 class="cta-title">
+						Ready to Make Your
+						<span class="gradient-text-cta"
+							>Money Matter</span
+						>?
+					</h2>
+					<p class="cta-description">
+						Join 50,000+ investors who are
+						building wealth while creating
+						positive environmental and social
+						impact.
+					</p>
+
+					<!-- Email Form -->
+					<form
+						class="cta-form"
+						id="signupForm"
+					>
+						<div class="cta-input-wrapper">
+							<svg
+								width="20"
+								height="20"
+								viewBox="0 0 20 20"
+								fill="none"
+							>
+								<path
+									d="M3 4H17C17.55 4 18 4.45 18 5V15C18 15.55 17.55 16 17 16H3C2.45 16 2 15.55 2 15V5C2 4.45 2.45 4 3 4Z"
+									stroke="currentColor"
+									stroke-width="1.5"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								/>
+								<path
+									d="M18 5L10 11L2 5"
+									stroke="currentColor"
+									stroke-width="1.5"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								/>
+							</svg>
+							<input
+								type="email"
+								placeholder="Enter your email address"
+								required
+								aria-label="Email address"
+								class="cta-input"
+							/>
+						</div>
+						<button
+							type="submit"
+							class="cta-button"
+						>
+							Get Started Free
+							<svg
+								width="20"
+								height="20"
+								viewBox="0 0 20 20"
+								fill="none"
+							>
+								<path
+									d="M7.5 15L12.5 10L7.5 5"
+									stroke="currentColor"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								/>
+							</svg>
+						</button>
+					</form>
+
+					<!-- Trust Indicators -->
+					<div class="cta-trust">
+						<div class="cta-trust-item">
+							<svg
+								width="20"
+								height="20"
+								viewBox="0 0 20 20"
+								fill="none"
+							>
+								<circle
+									cx="10"
+									cy="10"
+									r="8"
+									stroke="currentColor"
+									stroke-width="1.5"
+								/>
+								<path
+									d="M7 10L9 12L13 8"
+									stroke="currentColor"
+									stroke-width="1.5"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								/>
+							</svg>
+							<span>No credit card required</span>
+						</div>
+						<div class="cta-trust-item">
+							<svg
+								width="20"
+								height="20"
+								viewBox="0 0 20 20"
+								fill="none"
+							>
+								<circle
+									cx="10"
+									cy="10"
+									r="8"
+									stroke="currentColor"
+									stroke-width="1.5"
+								/>
+								<path
+									d="M7 10L9 12L13 8"
+									stroke="currentColor"
+									stroke-width="1.5"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								/>
+							</svg>
+							<span>Free for 30 days</span>
+						</div>
+						<div class="cta-trust-item">
+							<svg
+								width="20"
+								height="20"
+								viewBox="0 0 20 20"
+								fill="none"
+							>
+								<circle
+									cx="10"
+									cy="10"
+									r="8"
+									stroke="currentColor"
+									stroke-width="1.5"
+								/>
+								<path
+									d="M7 10L9 12L13 8"
+									stroke="currentColor"
+									stroke-width="1.5"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								/>
+							</svg>
+							<span>Cancel anytime</span>
+						</div>
+					</div>
+				</div>
+
+				<!-- Stats Cards -->
+				<div class="cta-stats">
+					<div class="cta-stat-card">
+						<div class="cta-stat-icon">
+							<svg
+								width="28"
+								height="28"
+								viewBox="0 0 28 28"
+								fill="none"
+							>
+								<path
+									d="M14 2L17.09 10.26L26 10.26L18.95 15.74L22.04 24L14 18.52L5.96 24L9.05 15.74L2 10.26L10.91 10.26L14 2Z"
+									fill="currentColor"
+								/>
+							</svg>
+						</div>
+						<div class="cta-stat-content">
+							<div class="cta-stat-number">
+								4.9/5
+							</div>
+							<div class="cta-stat-label">
+								User Rating
+							</div>
+						</div>
+					</div>
+
+					<div class="cta-stat-card">
+						<div class="cta-stat-icon">
+							<svg
+								width="28"
+								height="28"
+								viewBox="0 0 28 28"
+								fill="none"
+							>
+								<path
+									d="M14 26C20.6274 26 26 20.6274 26 14C26 7.37258 20.6274 2 14 2C7.37258 2 2 7.37258 2 14C2 20.6274 7.37258 26 14 26Z"
+									stroke="currentColor"
+									stroke-width="2"
+								/>
+								<path
+									d="M9 14L12.5 17.5L19 11"
+									stroke="currentColor"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								/>
+							</svg>
+						</div>
+						<div class="cta-stat-content">
+							<div class="cta-stat-number">
+								50K+
+							</div>
+							<div class="cta-stat-label">
+								Active Users
+							</div>
+						</div>
+					</div>
+
+					<div class="cta-stat-card">
+						<div class="cta-stat-icon">
+							<svg
+								width="28"
+								height="28"
+								viewBox="0 0 28 28"
+								fill="none"
+							>
+								<path
+									d="M14 2V14M14 14L20 8M14 14L8 8"
+									stroke="currentColor"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								/>
+								<path
+									d="M24 14V24C24 24.5304 23.7893 25.0391 23.4142 25.4142C23.0391 25.7893 22.5304 26 22 26H6C5.46957 26 4.96086 25.7893 4.58579 25.4142C4.21071 25.0391 4 24.5304 4 24V14"
+									stroke="currentColor"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								/>
+							</svg>
+						</div>
+						<div class="cta-stat-content">
+							<div class="cta-stat-number">
+								$2.5B+
+							</div>
+							<div class="cta-stat-label">
+								Impact Invested
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Background Decoration -->
+				<div class="cta-decoration">
+					<div
+						class="cta-decoration-circle cta-decoration-circle-1"
+					></div>
+					<div
+						class="cta-decoration-circle cta-decoration-circle-2"
+					></div>
+					<div
+						class="cta-decoration-circle cta-decoration-circle-3"
+					></div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Footer -->
+		<footer class="footer">
+			<div class="footer-container">
+				<!-- Footer Main -->
+				<div class="footer-main">
+					<!-- Brand Column -->
+					<div class="footer-brand">
+						<h3 class="footer-logo">Eco-Vest</h3>
+						<p class="footer-tagline">
+							Investing in a sustainable future,
+							one portfolio at a time.
+						</p>
+						<div class="footer-social">
+							<a
+								href="#"
+								aria-label="X"
+								class="social-link"
+							>
+								<svg
+									width="20"
+									height="20"
+									viewBox="0 0 20 20"
+									fill="none"
+								>
+									<path
+										d="M15.751 2h2.924L12.117 9.507 20 18h-5.878l-4.595-5.997L4.095 18H1.17l7.012-8.015L0 2h6.026l4.152 5.487L15.751 2zm-1.026 14.375h1.62L5.416 3.65H3.674l11.051 12.725z"
+										fill="currentColor"
+									/>
+								</svg>
+							</a>
+							<a
+								href="#"
+								aria-label="LinkedIn"
+								class="social-link"
+							>
+								<svg
+									width="20"
+									height="20"
+									viewBox="0 0 20 20"
+									fill="none"
+								>
+									<path
+										d="M18.5 0H1.5C0.7 0 0 0.6 0 1.4V18.6C0 19.4 0.7 20 1.5 20H18.5C19.3 20 20 19.4 20 18.6V1.4C20 0.6 19.3 0 18.5 0ZM6 17H3V7.5H6V17ZM4.5 6.2C3.5 6.2 2.7 5.4 2.7 4.4C2.7 3.4 3.5 2.6 4.5 2.6C5.5 2.6 6.3 3.4 6.3 4.4C6.3 5.4 5.5 6.2 4.5 6.2ZM17 17H14V12.4C14 11.3 14 9.9 12.5 9.9C11 9.9 10.8 11.1 10.8 12.3V17H7.8V7.5H10.7V8.8H10.7C11.1 8.1 12.1 7.3 13.5 7.3C16.5 7.3 17 9.2 17 11.7V17Z"
+										fill="currentColor"
+									/>
+								</svg>
+							</a>
+							<a
+								href="#"
+								aria-label="Instagram"
+								class="social-link"
+							>
+								<svg
+									width="20"
+									height="20"
+									viewBox="0 0 20 20"
+									fill="none"
+								>
+									<path
+										d="M10 1.8C12.7 1.8 13 1.8 14.1 1.8C15.1 1.8 15.6 2 16 2.2C16.5 2.4 16.9 2.6 17.3 3C17.7 3.4 17.9 3.8 18.1 4.3C18.3 4.7 18.5 5.2 18.5 6.2C18.5 7.3 18.5 7.6 18.5 10.3C18.5 13 18.5 13.3 18.5 14.4C18.5 15.4 18.3 15.9 18.1 16.3C17.9 16.8 17.7 17.2 17.3 17.6C16.9 18 16.5 18.2 16 18.4C15.6 18.6 15.1 18.8 14.1 18.8C13 18.8 12.7 18.8 10 18.8C7.3 18.8 7 18.8 5.9 18.8C4.9 18.8 4.4 18.6 4 18.4C3.5 18.2 3.1 18 2.7 17.6C2.3 17.2 2.1 16.8 1.9 16.3C1.7 15.9 1.5 15.4 1.5 14.4C1.5 13.3 1.5 13 1.5 10.3C1.5 7.6 1.5 7.3 1.5 6.2C1.5 5.2 1.7 4.7 1.9 4.3C2.1 3.8 2.3 3.4 2.7 3C3.1 2.6 3.5 2.4 4 2.2C4.4 2 4.9 1.8 5.9 1.8C7 1.8 7.3 1.8 10 1.8ZM10 0C7.3 0 7 0 5.9 0C4.8 0 4.1 0.2 3.5 0.5C2.9 0.8 2.3 1.1 1.7 1.7C1.1 2.3 0.8 2.9 0.5 3.5C0.2 4.1 0 4.8 0 5.9C0 7 0 7.3 0 10C0 12.7 0 13 0 14.1C0 15.2 0.2 15.9 0.5 16.5C0.8 17.1 1.1 17.7 1.7 18.3C2.3 18.9 2.9 19.2 3.5 19.5C4.1 19.8 4.8 20 5.9 20C7 20 7.3 20 10 20C12.7 20 13 20 14.1 20C15.2 20 15.9 19.8 16.5 19.5C17.1 19.2 17.7 18.9 18.3 18.3C18.9 17.7 19.2 17.1 19.5 16.5C19.8 15.9 20 15.2 20 14.1C20 13 20 12.7 20 10C20 7.3 20 7 20 5.9C20 4.8 19.8 4.1 19.5 3.5C19.2 2.9 18.9 2.3 18.3 1.7C17.7 1.1 17.1 0.8 16.5 0.5C15.9 0.2 15.2 0 14.1 0C13 0 12.7 0 10 0Z"
+										fill="currentColor"
+									/>
+									<path
+										d="M10 5C7.2 5 5 7.2 5 10C5 12.8 7.2 15 10 15C12.8 15 15 12.8 15 10C15 7.2 12.8 5 10 5ZM10 13.3C8.2 13.3 6.7 11.8 6.7 10C6.7 8.2 8.2 6.7 10 6.7C11.8 6.7 13.3 8.2 13.3 10C13.3 11.8 11.8 13.3 10 13.3Z"
+										fill="currentColor"
+									/>
+									<circle
+										cx="15.3"
+										cy="4.7"
+										r="1.2"
+										fill="currentColor"
+									/>
+								</svg>
+							</a>
+							<a
+								href="#"
+								aria-label="Facebook"
+								class="social-link"
+							>
+								<svg
+									width="20"
+									height="20"
+									viewBox="0 0 20 20"
+									fill="none"
+								>
+									<path
+										d="M20 10C20 4.5 15.5 0 10 0C4.5 0 0 4.5 0 10C0 14.9 3.7 19 8.4 19.9V12.9H5.9V10H8.4V7.8C8.4 5.3 9.9 3.9 12.2 3.9C13.3 3.9 14.5 4.1 14.5 4.1V6.6H13.2C11.9 6.6 11.5 7.4 11.5 8.2V10H14.4L13.9 12.9H11.5V19.9C16.3 19 20 14.9 20 10Z"
+										fill="currentColor"
+									/>
+								</svg>
+							</a>
+						</div>
+					</div>
+
+					<!-- Links Columns -->
+					<div class="footer-links">
+						<div class="footer-column">
+							<h4>Product</h4>
+							<ul>
+								<li>
+									<a href="#features">Features</a>
+								</li>
+								<li>
+									<a href="#how-it-works"
+										>How It Works</a
+									>
+								</li>
+								<li>
+									<a href="#impact">Impact</a>
+								</li>
+								<li><a href="#">Pricing</a></li>
+								<li><a href="#">API</a></li>
+							</ul>
+						</div>
+
+						<div class="footer-column">
+							<h4>Company</h4>
+							<ul>
+								<li><a href="#">About Us</a></li>
+								<li><a href="#">Careers</a></li>
+								<li><a href="#">Blog</a></li>
+								<li><a href="#">Press Kit</a></li>
+								<li><a href="#">Partners</a></li>
+							</ul>
+						</div>
+
+						<div class="footer-column">
+							<h4>Resources</h4>
+							<ul>
+								<li>
+									<a href="#">Help Center</a>
+								</li>
+								<li><a href="#">Community</a></li>
+								<li><a href="#">Guides</a></li>
+								<li><a href="#">Webinars</a></li>
+								<li>
+									<a href="#">ESG Reports</a>
+								</li>
+							</ul>
+						</div>
+
+						<div class="footer-column">
+							<h4>Legal</h4>
+							<ul>
+								<li>
+									<a href="#">Privacy Policy</a>
+								</li>
+								<li>
+									<a href="#">Terms of Service</a>
+								</li>
+								<li>
+									<a href="#">Cookie Policy</a>
+								</li>
+								<li>
+									<a href="#">Compliance</a>
+								</li>
+								<li>
+									<a href="#">Disclosures</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<!-- Footer Bottom -->
+				<div class="footer-bottom">
+					<div class="footer-bottom-content">
+						<p class="footer-copyright">
+							&copy; 2025 Eco-Vest. All rights
+							reserved.
+						</p>
+						<div class="footer-badges">
+							<span class="footer-badge">
+								<svg
+									width="16"
+									height="16"
+									viewBox="0 0 16 16"
+									fill="none"
+								>
+									<path
+										d="M8 1L10 6L15 6L11 9L13 14L8 11L3 14L5 9L1 6L6 6L8 1Z"
+										fill="currentColor"
+									/>
+								</svg>
+								SEC Registered
+							</span>
+							<span class="footer-badge">
+								<svg
+									width="16"
+									height="16"
+									viewBox="0 0 16 16"
+									fill="none"
+								>
+									<path
+										d="M8 2C6.9 2 6 2.9 6 4V6H4C2.9 6 2 6.9 2 8V12C2 13.1 2.9 14 4 14H12C13.1 14 14 13.1 14 12V8C14 6.9 13.1 6 12 6H10V4C10 2.9 9.1 2 8 2ZM8 3.5C8.3 3.5 8.5 3.7 8.5 4V6H7.5V4C7.5 3.7 7.7 3.5 8 3.5ZM8 9C8.6 9 9 9.4 9 10C9 10.6 8.6 11 8 11C7.4 11 7 10.6 7 10C7 9.4 7.4 9 8 9Z"
+										fill="currentColor"
+									/>
+								</svg>
+								Bank-Level Security
+							</span>
+							<span class="footer-badge">
+								<svg
+									width="16"
+									height="16"
+									viewBox="0 0 16 16"
+									fill="none"
+								>
+									<circle
+										cx="8"
+										cy="8"
+										r="6"
+										stroke="currentColor"
+										stroke-width="1.5"
+									/>
+									<path
+										d="M5 8L7 10L11 6"
+										stroke="currentColor"
+										stroke-width="1.5"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									/>
+								</svg>
+								B-Corp Certified
+							</span>
+						</div>
+					</div>
+				</div>
+
+				<!-- Background Decoration -->
+				<div class="footer-decoration">
+					<div
+						class="footer-decoration-circle footer-decoration-circle-1"
+					></div>
+					<div
+						class="footer-decoration-circle footer-decoration-circle-2"
+					></div>
+				</div>
+			</div>
+		</footer>
+
+		<script src="script.js"></script>
+	</body>
 </html>

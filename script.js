@@ -1,166 +1,251 @@
 // ==================== Mobile Menu Toggle ====================
 
-const menuToggle = document.querySelector(".menu-toggle");
-const navMenu = document.querySelector(".nav-menu");
-const headerEl = document.querySelector(".header");
-const navLinks = document.querySelectorAll(".nav-menu a");
+const mobileToggle = document.querySelector(
+	".mobile-toggle"
+);
+const mobileMenu = document.querySelector(
+	".mobile-menu"
+);
+const headerEl =
+	document.querySelector(".header");
+const mobileLinks = document.querySelectorAll(
+	".mobile-link"
+);
 
 function closeMenu() {
-  navMenu.classList.remove("active");
-  menuToggle.classList.remove("active");
-  menuToggle.setAttribute("aria-expanded", "false");
+	mobileMenu.classList.remove("active");
+	mobileToggle.classList.remove("active");
+	mobileToggle.setAttribute(
+		"aria-expanded",
+		"false"
+	);
+	document.body.classList.remove("menu-open");
 }
 
 function openMenu() {
-  navMenu.classList.add("active");
-  menuToggle.classList.add("active");
-  menuToggle.setAttribute("aria-expanded", "true");
-  // Position menu right below header
-  const headerHeight = headerEl.offsetHeight;
-  navMenu.style.top = headerHeight + "px";
+	mobileMenu.classList.add("active");
+	mobileToggle.classList.add("active");
+	mobileToggle.setAttribute(
+		"aria-expanded",
+		"true"
+	);
+	document.body.classList.add("menu-open");
 }
 
 // Toggle menu on button click
-menuToggle.addEventListener("click", () => {
-  if (navMenu.classList.contains("active")) {
-    closeMenu();
-  } else {
-    openMenu();
-  }
+mobileToggle.addEventListener("click", () => {
+	if (mobileMenu.classList.contains("active")) {
+		closeMenu();
+	} else {
+		openMenu();
+	}
 });
 
 // Close menu when a link is clicked
-navLinks.forEach((link) => {
-  link.addEventListener("click", () => {
-    closeMenu();
-  });
+mobileLinks.forEach((link) => {
+	link.addEventListener("click", () => {
+		closeMenu();
+	});
 });
 
 // Close menu when clicking outside
 document.addEventListener("click", (e) => {
-  const navbar = document.querySelector(".navbar");
-  if (navMenu.classList.contains("active") && !navbar.contains(e.target)) {
-    closeMenu();
-  }
+	const headerContainer = document.querySelector(
+		".header-container"
+	);
+	if (
+		mobileMenu.classList.contains("active") &&
+		!headerContainer.contains(e.target) &&
+		!mobileMenu.contains(e.target)
+	) {
+		closeMenu();
+	}
 });
 
 // Close menu on escape key
 document.addEventListener("keydown", (e) => {
-  if (e.key === "Escape" && navMenu.classList.contains("active")) {
-    closeMenu();
-  }
+	if (
+		e.key === "Escape" &&
+		mobileMenu.classList.contains("active")
+	) {
+		closeMenu();
+	}
 });
+
+// ==================== Logo Scroll to Top ====================
+
+const logo = document.querySelector(".logo");
+if (logo) {
+	logo.addEventListener("click", (e) => {
+		e.preventDefault();
+		window.scrollTo({
+			top: 0,
+			behavior: "smooth",
+		});
+		// Close mobile menu if open
+		if (mobileMenu.classList.contains("active")) {
+			closeMenu();
+		}
+	});
+}
 
 // ==================== Header CTA Button ====================
 
-const headerCTABtn = document.querySelector(".btn-header-cta");
+const headerCTABtn = document.querySelector(
+	".btn-header-cta"
+);
 if (headerCTABtn) {
-  headerCTABtn.addEventListener("click", () => {
-    const ctaSection = document.getElementById("contact");
-    if (ctaSection) {
-      ctaSection.scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-      });
-    }
-  });
+	headerCTABtn.addEventListener("click", () => {
+		const ctaSection =
+			document.getElementById("contact");
+		if (ctaSection) {
+			ctaSection.scrollIntoView({
+				behavior: "smooth",
+				block: "start",
+			});
+		}
+	});
 }
 
 // ==================== Smooth Scrolling ====================
 
-document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-  anchor.addEventListener("click", function (e) {
-    e.preventDefault();
-    const target = document.querySelector(this.getAttribute("href"));
-    if (target) {
-      target.scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-      });
-    }
-  });
-});
+document
+	.querySelectorAll('a[href^="#"]')
+	.forEach((anchor) => {
+		anchor.addEventListener(
+			"click",
+			function (e) {
+				e.preventDefault();
+				const href = this.getAttribute("href");
+
+				// Handle scroll to top for # or empty href
+				if (href === "#" || href === "") {
+					window.scrollTo({
+						top: 0,
+						behavior: "smooth",
+					});
+					return;
+				}
+
+				// Handle scroll to specific section
+				const target =
+					document.querySelector(href);
+				if (target) {
+					target.scrollIntoView({
+						behavior: "smooth",
+						block: "start",
+					});
+				}
+			}
+		);
+	});
 
 // ==================== Scroll to CTA Button ====================
 
-const scrollToCTABtn = document.getElementById("scrollToCTA");
+const scrollToCTABtn = document.getElementById(
+	"scrollToCTA"
+);
 if (scrollToCTABtn) {
-  scrollToCTABtn.addEventListener("click", () => {
-    const ctaSection = document.getElementById("contact");
-    if (ctaSection) {
-      ctaSection.scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-      });
-    }
-  });
+	scrollToCTABtn.addEventListener("click", () => {
+		const ctaSection =
+			document.getElementById("contact");
+		if (ctaSection) {
+			ctaSection.scrollIntoView({
+				behavior: "smooth",
+				block: "start",
+			});
+		}
+	});
 }
 
 // ==================== Form Submission ====================
 
-const signupForm = document.getElementById("signupForm");
+const signupForm =
+	document.getElementById("signupForm");
 if (signupForm) {
-  signupForm.addEventListener("submit", async (e) => {
-    e.preventDefault();
+	signupForm.addEventListener(
+		"submit",
+		async (e) => {
+			e.preventDefault();
 
-    const emailInput = signupForm.querySelector('input[type="email"]');
-    const email = emailInput.value;
+			const emailInput = signupForm.querySelector(
+				'input[type="email"]'
+			);
+			const email = emailInput.value;
 
-    // Basic email validation
-    if (!isValidEmail(email)) {
-      showNotification("Please enter a valid email address.", "error");
-      return;
-    }
+			// Basic email validation
+			if (!isValidEmail(email)) {
+				showNotification(
+					"Please enter a valid email address.",
+					"error"
+				);
+				return;
+			}
 
-    // Simulate form submission
-    const button = signupForm.querySelector('button[type="submit"]');
-    const originalText = button.textContent;
+			// Simulate form submission
+			const button = signupForm.querySelector(
+				'button[type="submit"]'
+			);
+			const originalText = button.textContent;
 
-    button.textContent = "Submitting...";
-    button.disabled = true;
+			button.textContent = "Submitting...";
+			button.disabled = true;
 
-    // Simulate API call delay
-    setTimeout(() => {
-      button.textContent = originalText;
-      button.disabled = false;
+			// Simulate API call delay
+			setTimeout(() => {
+				button.textContent = originalText;
+				button.disabled = false;
 
-      showNotification(
-        `Thank you! Check your email (${email}) for your sign-up confirmation.`,
-        "success"
-      );
+				showNotification(
+					`Thank you! Check your email (${email}) for your sign-up confirmation.`,
+					"success"
+				);
 
-      // Clear form
-      signupForm.reset();
-    }, 1500);
-  });
+				// Clear form
+				signupForm.reset();
+			}, 1500);
+		}
+	);
 }
 
 // ==================== Email Validation ====================
 
 function isValidEmail(email) {
-  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  return emailRegex.test(email);
+	const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+	return emailRegex.test(email);
 }
 
 // ==================== Notification System ====================
 
-function showNotification(message, type = "info") {
-  // Remove existing notification if any
-  const existingNotification = document.querySelector(".notification");
-  if (existingNotification) {
-    existingNotification.remove();
-  }
+function showNotification(
+	message,
+	type = "info"
+) {
+	// Remove existing notification if any
+	const existingNotification =
+		document.querySelector(".notification");
+	if (existingNotification) {
+		existingNotification.remove();
+	}
 
-  // Create notification element
-  const notification = document.createElement("div");
-  notification.className = `notification notification-${type}`;
-  notification.textContent = message;
+	// Create notification element
+	const notification =
+		document.createElement("div");
+	notification.className = `notification notification-${type}`;
+	notification.textContent = message;
 
-  // Add styles dynamically if not in CSS
-  if (!document.querySelector("style[data-notification]")) {
-    const style = document.createElement("style");
-    style.setAttribute("data-notification", "true");
-    style.textContent = `
+	// Add styles dynamically if not in CSS
+	if (
+		!document.querySelector(
+			"style[data-notification]"
+		)
+	) {
+		const style = document.createElement("style");
+		style.setAttribute(
+			"data-notification",
+			"true"
+		);
+		style.textContent = `
             .notification {
                 position: fixed;
                 top: 20px;
@@ -219,49 +304,61 @@ function showNotification(message, type = "info") {
                 }
             }
         `;
-    document.head.appendChild(style);
-  }
+		document.head.appendChild(style);
+	}
 
-  document.body.appendChild(notification);
+	document.body.appendChild(notification);
 
-  // Auto-remove after 5 seconds
-  setTimeout(() => {
-    notification.style.animation = "slideOut 0.3s ease-out";
-    setTimeout(() => notification.remove(), 300);
-  }, 5000);
+	// Auto-remove after 5 seconds
+	setTimeout(() => {
+		notification.style.animation =
+			"slideOut 0.3s ease-out";
+		setTimeout(() => notification.remove(), 300);
+	}, 5000);
 }
 
 // ==================== Intersection Observer for Animations ====================
 
 const observerOptions = {
-  threshold: 0.1,
-  rootMargin: "0px 0px -50px 0px",
+	threshold: 0.1,
+	rootMargin: "0px 0px -50px 0px",
 };
 
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add("fade-in");
-      observer.unobserve(entry.target);
-    }
-  });
-}, observerOptions);
+const observer = new IntersectionObserver(
+	(entries) => {
+		entries.forEach((entry) => {
+			if (entry.isIntersecting) {
+				entry.target.classList.add("fade-in");
+				observer.unobserve(entry.target);
+			}
+		});
+	},
+	observerOptions
+);
 
 // Observe cards and features
 document
-  .querySelectorAll(
-    ".feature-item, .usp-card, .testimonial-card, .impact-card, .step"
-  )
-  .forEach((el) => {
-    el.classList.add("fade-in-on-scroll");
-    observer.observe(el);
-  });
+	.querySelectorAll(
+		".feature-item, .usp-card, .testimonial-card, .impact-card, .step"
+	)
+	.forEach((el) => {
+		el.classList.add("fade-in-on-scroll");
+		observer.observe(el);
+	});
 
 // Add fade-in styles
-if (!document.querySelector("style[data-animations]")) {
-  const animStyle = document.createElement("style");
-  animStyle.setAttribute("data-animations", "true");
-  animStyle.textContent = `
+if (
+	!document.querySelector(
+		"style[data-animations]"
+	)
+) {
+	const animStyle =
+		document.createElement("style");
+	animStyle.setAttribute(
+		"data-animations",
+		"true"
+	);
+	animStyle.textContent = `
         .fade-in-on-scroll {
             opacity: 0;
             transform: translateY(20px);
@@ -282,7 +379,7 @@ if (!document.querySelector("style[data-animations]")) {
             }
         }
     `;
-  document.head.appendChild(animStyle);
+	document.head.appendChild(animStyle);
 }
 
 // ==================== Navbar Scroll Effect ====================
@@ -291,46 +388,53 @@ let lastScrollTop = 0;
 const header = document.querySelector(".header");
 
 window.addEventListener("scroll", () => {
-  let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+	let scrollTop =
+		window.pageYOffset ||
+		document.documentElement.scrollTop;
 
-  if (scrollTop > 50) {
-    header.classList.add("scrolled");
-  } else {
-    header.classList.remove("scrolled");
-  }
+	if (scrollTop > 50) {
+		header.classList.add("scrolled");
+	} else {
+		header.classList.remove("scrolled");
+	}
 
-  lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+	lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
 });
 
 // ==================== Analytics Tracking (Optional) ====================
 
 // Track button clicks
-document.querySelectorAll(".btn-primary").forEach((btn) => {
-  btn.addEventListener("click", () => {
-    trackEvent("button_click", {
-      button_text: btn.textContent,
-      button_location: btn.closest("section")?.className || "unknown",
-    });
-  });
-});
+document
+	.querySelectorAll(".btn-primary")
+	.forEach((btn) => {
+		btn.addEventListener("click", () => {
+			trackEvent("button_click", {
+				button_text: btn.textContent,
+				button_location:
+					btn.closest("section")?.className ||
+					"unknown",
+			});
+		});
+	});
 
 function trackEvent(eventName, eventData = {}) {
-  // This can be connected to Google Analytics, Mixpanel, or similar
-  console.log(`Event: ${eventName}`, eventData);
+	// This can be connected to Google Analytics, Mixpanel, or similar
+	console.log(`Event: ${eventName}`, eventData);
 
-  // Example: Google Analytics integration
-  // if (window.gtag) {
-  //     gtag('event', eventName, eventData);
-  // }
+	// Example: Google Analytics integration
+	// if (window.gtag) {
+	//     gtag('event', eventName, eventData);
+	// }
 }
 
 // ==================== Accessibility Improvements ====================
 
 // Add focus visible styles
 if (!document.querySelector("style[data-a11y]")) {
-  const a11yStyle = document.createElement("style");
-  a11yStyle.setAttribute("data-a11y", "true");
-  a11yStyle.textContent = `
+	const a11yStyle =
+		document.createElement("style");
+	a11yStyle.setAttribute("data-a11y", "true");
+	a11yStyle.textContent = `
         button:focus-visible,
         a:focus-visible,
         input:focus-visible {
@@ -338,7 +442,7 @@ if (!document.querySelector("style[data-a11y]")) {
             outline-offset: 2px;
         }
     `;
-  document.head.appendChild(a11yStyle);
+	document.head.appendChild(a11yStyle);
 }
 
 // ==================== Initialization ====================
