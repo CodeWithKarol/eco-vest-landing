@@ -15,14 +15,16 @@ This landing page showcases the Eco-Vest brand and converts visitors into app us
 
 ```
 eco-vest-landing/
-├── index.html           # Main landing page
-├── styles.css           # Complete styling with responsive design
-├── script.js            # Interactive features and functionality
+├── index.html                  # Main landing page
+├── styles.css                  # Complete styling with responsive design
+├── script.js                   # Interactive features and functionality
+├── favicon.svg                 # Site favicon (eco-friendly lightning bolt design)
+├── CUSTOMIZATION-GUIDE.html    # Detailed instructions for customizing the template
 ├── assets/
-│   ├── images/          # Image assets (placeholder)
-│   └── icons/           # Icon assets (placeholder)
-├── README.md            # This file
-└── LICENSE              # Project license
+│   ├── images/                 # Image assets (placeholder)
+│   └── icons/                  # Icon assets (placeholder)
+├── README.md                   # This file
+└── LICENSE                     # Project license
 ```
 
 ## 🎨 Design System
@@ -115,33 +117,38 @@ eco-vest-landing/
 
 ### 7. **Testimonials**
 
-- **Three testimonial cards** with customer quotes
-- **Custom 5-star SVG icons** in accent green
-- **Modern card styling** with gradient top border
-- **Responsive grid layout** (3-column desktop, 1-column mobile)
+- **Three testimonial cards** with modern glass-morphism design
+- **Quote icons** with gradient styling
+- **Customer avatars** with colored circles and initials
+- **5-star ratings** with gradient accent
+- **Trust indicators** showing 50K+ Active Investors, 4.9/5 Rating, 95% Satisfaction
+- **Fixed 3-column grid** on desktop (2-column tablet, 1-column mobile)
+- **Glass-morphism cards** with backdrop blur and gradient borders
 - **Smooth animations** with staggered entrance on page load
-- **Professional typography** highlighting user feedback
 
 ### 8. **Call-to-Action (CTA) Section**
 
-- **Two-column layout** (content left, features right) on desktop
-- **Dark gradient background** with subtle decorative elements
-- **Email signup form** with frosted glass input styling
-- **Gradient button** with smooth hover transitions
-- **Three feature cards** with checkmark SVG icons highlighting key benefits
-- **Interactive hover effects** with card lift and icon scaling
+- **Centered layout** with modern pill-style email form
+- **Gradient background** with animated decorative circles
+- **Gradient text accent** on "Start Building Impact"
+- **Pill-shaped email input** with embedded icon and button
+- **Three stat cards** showing 4.9/5 Rating, 50K+ Users, $2.5B+ Invested
+- **Trust checkmarks** with feature highlights
+- **Glass-morphism effects** on stat cards with hover animations
 - **Responsive single-column** layout on mobile/tablet
 
 ### 9. **Footer**
 
-- **Four-column grid layout** (Brand, Quick Links, Support, Legal)
-- **Brand section** with logo, company description, and social icons
-- **Social icon links** (Instagram, Twitter, LinkedIn) with custom SVG icons
-- **Interactive hover effects** on links and social icons (lift, color change, glow)
-- **Underline animation** on footer links with gradient sweep
-- **Dark gradient background** for visual distinction
-- **Responsive layout** (4-column desktop → 2-column tablet → 1-column mobile)
-- **Copyright notice** with heart SVG icon
+- **Two-column layout** with brand section and link columns
+- **Brand section** with gradient logo text, tagline, and social icons
+- **Social icon links** (X/Twitter, LinkedIn, Instagram, Facebook) in rounded squares
+- **Four link columns** (Product, Company, Resources, Legal) with 5 links each
+- **Trust badges** (SEC Registered, Bank-Level Security, B-Corp Certified) with icons
+- **Gradient background** with animated decorative circles
+- **Interactive hover effects** on all links with color transitions and lift animations
+- **Centered content on mobile/tablet** (up to 1024px) for better UX
+- **Responsive layout** (2-column desktop → 1-column mobile with centered alignment)
+- **Copyright notice** in bottom section
 
 ## ⚙️ Features
 
@@ -194,6 +201,23 @@ npx http-server
 php -S localhost:8000
 ```
 
+### Customization
+
+📖 **Need to customize this template for your own product?**
+
+Open `CUSTOMIZATION-GUIDE.html` in your browser for detailed, step-by-step instructions covering:
+
+- Changing colors and branding
+- Modifying content sections
+- Updating navigation and links
+- Customizing the CTA form
+- Replacing icons and images
+- Typography changes
+- SEO optimization
+- Deployment checklist
+
+The guide includes code examples, tips, and troubleshooting for common issues.
+
 ## 📱 Responsive Breakpoints
 
 - **Desktop**: 1024px and above (full two-column layouts, standard spacing)
@@ -211,14 +235,19 @@ php -S localhost:8000
 - ✅ **Email form validation** with real-time feedback
 - ✅ **Scroll animations** on cards and elements with staggered delays
 - ✅ **Custom SVG icons** throughout all sections (no external icon libraries)
+- ✅ **Custom favicon** with eco-friendly lightning bolt design
+- ✅ **Comprehensive customization guide** in HTML format with step-by-step instructions
 - ✅ **Elegant logo hover effect** with gradient underline and icon animation
-- ✅ **Frosted glass effects** on cards and form inputs
-- ✅ **Gradient backgrounds** with decorative animated orbs
+- ✅ **Glass-morphism effects** on testimonial cards and stat cards
+- ✅ **Gradient backgrounds** with decorative animated circles
+- ✅ **Modern pill-style forms** with embedded icons and buttons
+- ✅ **Centered mobile/tablet footer** for improved readability
 - ✅ **Interactive hover states** with smooth transitions and visual feedback
 - ✅ **Touch-friendly interface** with 44px+ tap targets
 - ✅ **Accessible (WCAG compliance)** with semantic HTML and ARIA labels
 - ✅ **SEO optimized** with meta tags and structured content
 - ✅ **Performance optimized** with no external dependencies
+- ✅ **Ready to customize** - well-documented code structure for easy modifications
 
 ## 🔐 Deployment Ready
 
